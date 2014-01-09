@@ -26,5 +26,7 @@ git add .
 git commit  -m "staging all files"
 ```
 
-
+```{r label = STATUS2}
+git status
+```
 

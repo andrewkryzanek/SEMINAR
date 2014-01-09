@@ -36,4 +36,19 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 
 
+```bash
+git add .
+git commit  -m "staging all files"
+```
+
+```
+[master fb3dfbc] staging all files
+ 3 files changed, 243 insertions(+)
+ create mode 100644 Alan/summaries/GIT_LAB1.Rmd
+ create mode 100644 Alan/summaries/GIT_LAB1.html
+ create mode 100644 Alan/summaries/GIT_LAB1.md
+```
+
+
+
 
