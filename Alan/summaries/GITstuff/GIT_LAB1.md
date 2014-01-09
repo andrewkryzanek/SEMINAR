@@ -28,7 +28,9 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
+#	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
+#	modified:   RmakeFile.R
 #
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -42,8 +44,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master bcc82f0] staging all files
- 1 file changed, 8 insertions(+), 9 deletions(-)
+[master c3bdcaa] staging all files
+ 3 files changed, 19 insertions(+), 22 deletions(-)
 ```
 
 
@@ -84,6 +86,12 @@ git log  -3
 ```
 
 ```
+commit c3bdcaa7e4e910ba10ea0b5e4de0396196fe027d
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 16:59:01 2014 -0500
+
+    staging all files
+
 commit bcc82f0c3e7489c160c49c78cc40e2e7ea52bb1f
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 16:57:50 2014 -0500
@@ -93,12 +101,6 @@ Date:   Thu Jan 9 16:57:50 2014 -0500
 commit 6e5fbdc88ac1ca323b17ce60a5499ed6bcd7a213
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:45:25 2014 -0500
-
-    staging all files
-
-commit 8ea373688b59cfee42c34103d93aad10418b42bb
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:43:51 2014 -0500
 
     staging all files
 ```
