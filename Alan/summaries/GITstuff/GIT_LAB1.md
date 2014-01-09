@@ -24,24 +24,7 @@ git status
 
 ```
 # On branch master
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	deleted:    ../GIT_LAB1.Rmd
-#	deleted:    ../GIT_LAB1.html
-#	deleted:    ../GIT_LAB1.md
-#	deleted:    ../GIT_LAB1.pdf
-#	deleted:    ../RmakeFile.R
-#	deleted:    ../figure/unnamed-chunk-1.pdf
-#	deleted:    ../figure/unnamed-chunk-1.png
-#	deleted:    ../figure/unnamed-chunk-2.png
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	./
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit (working directory clean)
 ```
 
 
@@ -53,10 +36,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 55a8311] staging all files
- 2 files changed, 63 insertions(+)
- create mode 100644 Alan/summaries/GITstuff/GIT_LAB1.Rmd
- create mode 100644 Alan/summaries/GITstuff/RmakeFile.R
+# On branch master
+nothing to commit (working directory clean)
 ```
 
 
@@ -68,22 +49,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	deleted:    ../GIT_LAB1.Rmd
-#	deleted:    ../GIT_LAB1.html
-#	deleted:    ../GIT_LAB1.md
-#	deleted:    ../GIT_LAB1.pdf
-#	deleted:    ../RmakeFile.R
-#	deleted:    ../figure/unnamed-chunk-1.pdf
-#	deleted:    ../figure/unnamed-chunk-1.png
-#	deleted:    ../figure/unnamed-chunk-2.png
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit (working directory clean)
 ```
 
 Push changes to the remote repository. 
@@ -100,20 +66,7 @@ git status
 
 ```
 # On branch master
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	deleted:    ../GIT_LAB1.Rmd
-#	deleted:    ../GIT_LAB1.html
-#	deleted:    ../GIT_LAB1.md
-#	deleted:    ../GIT_LAB1.pdf
-#	deleted:    ../RmakeFile.R
-#	deleted:    ../figure/unnamed-chunk-1.pdf
-#	deleted:    ../figure/unnamed-chunk-1.png
-#	deleted:    ../figure/unnamed-chunk-2.png
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit (working directory clean)
 ```
 
 Show the last three commits with
@@ -123,23 +76,24 @@ git log  -3
 ```
 
 ```
-commit 55a831183274b49e4c3f1ea95aa8c4868b020192
+commit 07c1788282ff95c59eba2d7effba3bfa1cf71e6f
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:34:02 2014 -0500
+Date:   Thu Jan 9 14:43:26 2014 -0500
 
-    staging all files
+    change path
 
-commit 3949d1b8e1fac035086b4c4029087da3da88b392
+commit 32fcfcd27cacd3617841de8350ed7e90cd5713e7
+Merge: 9fde576 3d1e3c2
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:31:32 2014 -0500
+Date:   Thu Jan 9 14:42:33 2014 -0500
 
-    staging all files
+    Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
 
-commit 977cb5b3c3a381bdef0cef63599fcbd535116302
+commit 9fde576f6ee66a0412a44cc790c8a237b6f4c1d1
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:09:08 2014 -0500
+Date:   Thu Jan 9 14:42:24 2014 -0500
 
-    staging all files
+    remove and reorganize
 ```
 
 
