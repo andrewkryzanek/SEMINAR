@@ -179,6 +179,16 @@ hljs.initHighlightingOnLoad();
 </head>
 
 <body>
+<!--pandoc
+format: html
+s:
+mathjax:
+number-sections:
+
+format: latex
+number-sections:
+-->
+
 <h2>GIT</h2>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -203,11 +213,8 @@ git config --global color.ui true
 #   modified:   GIT_LAB1.Rmd
 #   modified:   GIT_LAB1.html
 #   modified:   GIT_LAB1.md
+#   modified:   GIT_LAB1.pdf
 #
-# Untracked files:
-#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-#
-#   GIT_LAB1.pdf
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre>
 
@@ -217,9 +224,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 57da39b] staging all files
- 4 files changed, 19 insertions(+), 19 deletions(-)
- create mode 100644 Alan/summaries/GIT_LAB1.pdf
+<pre><code>[master efa3ce2] staging all files
+ 4 files changed, 37 insertions(+), 16 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -252,7 +258,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 57da39b2cb5de992d3053608da06b1061b89c817
+<pre><code>commit efa3ce24f1d0b845f2ed4099542d9c5ef8219d25
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Thu Jan 9 13:17:17 2014 -0500
+
+    staging all files
+
+commit 57da39b2cb5de992d3053608da06b1061b89c817
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 13:13:48 2014 -0500
 
@@ -261,12 +273,6 @@ Date:   Thu Jan 9 13:13:48 2014 -0500
 commit e72d2495ec3ac3b3eb6503bb06b9c041b47efbcf
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 13:04:52 2014 -0500
-
-    staging all files
-
-commit c3a6fa7178a17aa72e74ff242be2c885762bdeb1
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 13:02:10 2014 -0500
 
     staging all files
 </code></pre>
