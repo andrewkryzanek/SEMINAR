@@ -30,7 +30,7 @@ git status
 #
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
-#	modified:   figure/unnamed-chunk-1.png
+#	modified:   GIT_LAB1.pdf
 #
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -44,9 +44,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 49a00e1] staging all files
- 3 files changed, 63 insertions(+), 28 deletions(-)
- rewrite Alan/summaries/figure/unnamed-chunk-1.png (92%)
+[master 948b030] staging all files
+ 3 files changed, 252 insertions(+), 291 deletions(-)
+ rewrite Alan/summaries/GIT_LAB1.html (84%)
 ```
 
 
@@ -87,6 +87,12 @@ git log  -3
 ```
 
 ```
+commit 948b030c973fb446acae1645d329b108d4297879
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 13:51:53 2014 -0500
+
+    staging all files
+
 commit 49a00e1242f9fef7fa7ca3286e37b39ae7c43ea2
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:47:40 2014 -0500
@@ -96,12 +102,6 @@ Date:   Thu Jan 9 13:47:40 2014 -0500
 commit ab57c2888824468ae0bf98d3299de22a155a4b76
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:47:28 2014 -0500
-
-    staging all files
-
-commit 058b17bf5b13cf635d2945de3b9c77a4a8af42bf
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 13:45:47 2014 -0500
 
     staging all files
 ```
