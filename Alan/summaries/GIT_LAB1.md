@@ -44,8 +44,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 4d0c2ae] staging all files
- 3 files changed, 8 insertions(+), 46 deletions(-)
+[master 086385e] staging all files
+ 3 files changed, 50 insertions(+), 8 deletions(-)
 ```
 
 
@@ -61,7 +61,7 @@ git status
 nothing to commit (working directory clean)
 ```
 
-
+Push changes to the remote repository: 
 
 ```bash
 git push
@@ -79,13 +79,19 @@ nothing to commit (working directory clean)
 ```
 
 
-Show the last three 
+Show the last three commits with
 
 ```bash
 git log  -3
 ```
 
 ```
+commit 086385ef960a1386abcf190cb2edf419938c2e90
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 12:51:44 2014 -0500
+
+    staging all files
+
 commit 4d0c2ae650802fff2c6cf84845f82374cf66e251
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:50:31 2014 -0500
@@ -95,12 +101,6 @@ Date:   Thu Jan 9 12:50:31 2014 -0500
 commit ea1ba5a7c17bf654078066fd05c4749829e9faf8
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:50:10 2014 -0500
-
-    staging all files
-
-commit d1110e569eff6a8ad8f724408560424bc5cea9a6
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:49:54 2014 -0500
 
     staging all files
 ```

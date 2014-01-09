@@ -1,9 +1,6 @@
 ## GIT
-### Set up GIT
 
 First download and install the lastest version of [Git.](http://git-scm.com/downloads)
-
-
 
 ```{r label = SETUP, echo = FALSE}
 opts_chunk$set(comment = NA, engine = "bash")
@@ -41,4 +38,11 @@ git status
 Show the last three commits with
 ```{r label = LOG}
 git log  -3
+```
+
+Now just to show how cool this is, we will mix in a little `R`.
+
+```{r engine = 'r'}
+library(ggplot2)
+ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
 ```
