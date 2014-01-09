@@ -24,16 +24,7 @@ git status
 
 ```
 # On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   GIT_LAB1.md
-#	modified:   GIT_LAB1.pdf
-#	modified:   RmakeFile.R
-#	modified:   figure/unnamed-chunk-1.pdf
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit (working directory clean)
 ```
 
 
@@ -45,8 +36,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master dcef743] staging all files
- 4 files changed, 11 insertions(+), 9 deletions(-)
+# On branch master
+nothing to commit (working directory clean)
 ```
 
 
@@ -58,8 +49,6 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
 nothing to commit (working directory clean)
 ```
 
@@ -87,21 +76,21 @@ git log  -3
 ```
 
 ```
+commit d839e6e2cd24844df2cacc8efa8be946768fa3ef
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 14:05:05 2014 -0500
+
+    staging all files
+
+commit 97e8077b9e8488275e41155713c2b742d55c43f9
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 14:02:48 2014 -0500
+
+    staging all files
+
 commit dcef7437312d81895ddff08af2021424f0cfae20
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:02:33 2014 -0500
-
-    staging all files
-
-commit f71c01b9e428748a90a67b630d7370eed1db1ead
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:01:46 2014 -0500
-
-    staging all files
-
-commit 0cec9f9988dd9504ec4f7dd04fbbe37aea9d3e4d
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:00:42 2014 -0500
 
     staging all files
 ```
