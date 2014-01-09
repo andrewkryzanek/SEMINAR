@@ -28,8 +28,8 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
+#	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
-#	modified:   GIT_LAB1.pdf
 #	modified:   figure/unnamed-chunk-1.pdf
 #
 no changes added to commit (use "git add" and/or "git commit -a")
@@ -44,8 +44,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 3a2ade5] staging all files
- 3 files changed, 8 insertions(+), 8 deletions(-)
+[master 977cb5b] staging all files
+ 3 files changed, 20 insertions(+), 20 deletions(-)
 ```
 
 
@@ -86,6 +86,12 @@ git log  -3
 ```
 
 ```
+commit 977cb5b3c3a381bdef0cef63599fcbd535116302
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 14:09:08 2014 -0500
+
+    staging all files
+
 commit 3a2ade5197790f5dcfe2671a1c9e807cfa521153
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:08:45 2014 -0500
@@ -97,12 +103,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:08:12 2014 -0500
 
     add *.pdf to gitignore
-
-commit 0d00a4eed3f21b7bc5d46e16689b5a324a0c6036
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:06:28 2014 -0500
-
-    staging all files
 ```
 
 

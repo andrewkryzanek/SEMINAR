@@ -1,5 +1,5 @@
 # Set working directory
-setwd("/Users/alan/git_repositories/SEMINAR/Alan/summaries")
+setwd("./Alan/summaries")
 
 # Load packages
 require(knitr)
