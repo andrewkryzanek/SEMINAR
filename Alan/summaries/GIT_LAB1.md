@@ -25,13 +25,10 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 2 commits.
-#
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   GIT_LAB1.Rmd
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
@@ -46,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 72577b3] staging all files
- 3 files changed, 51 insertions(+), 22 deletions(-)
+[master d717677] staging all files
+ 2 files changed, 34 insertions(+), 8 deletions(-)
 ```
 
 
@@ -58,7 +55,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 3 commits.
+# Your branch is ahead of 'origin/master' by 1 commit.
 #
 nothing to commit (working directory clean)
 ```
