@@ -14,27 +14,29 @@ git config --global user.email "your_email@whatever.com"
 git config --global color.ui true
 ```
 
+Check the current status of your repository:
 ```{r label = STATUS}
 git status
 ```
 
+Next all files are added to the staging area and a snapshot is taken of the commit with the message "staging all files".
 ```{r label = ADD}
 git add .
 git commit  -m "staging all files"
 ```
 
+Check the status after the last commit.
 ```{r label = STATUS2}
 git status
 ```
-Push changes to the remote repository: 
+Push changes to the remote repository. 
 ```{r label = PUSH}
 git push
 ```
-
+See if there is anything left to do.
 ```{r label = STATUS3}
 git status
 ```
-
 Show the last three commits with
 ```{r label = LOG}
 git log  -3

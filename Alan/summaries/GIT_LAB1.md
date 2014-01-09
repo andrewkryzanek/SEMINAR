@@ -30,10 +30,6 @@ git status
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	figure/unnamed-chunk-1.png
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -45,9 +41,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 26f9df6] staging all files
- 4 files changed, 68 insertions(+), 21 deletions(-)
- create mode 100644 Alan/summaries/figure/unnamed-chunk-1.png
+[master 6351cf4] staging all files
+ 3 files changed, 31 insertions(+), 19 deletions(-)
 ```
 
 
@@ -88,6 +83,12 @@ git log  -3
 ```
 
 ```
+commit 6351cf47e98de580a2e90c2fed76d2ae33c2d211
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 12:57:44 2014 -0500
+
+    staging all files
+
 commit 26f9df60327110f9e467d1dba3d714f598e11cc6
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:56:58 2014 -0500
@@ -97,12 +98,6 @@ Date:   Thu Jan 9 12:56:58 2014 -0500
 commit 82be368eff5269e4c793135b66ed1df3237b147d
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:56:04 2014 -0500
-
-    staging all files
-
-commit 9093a6fa5c3ef3642a61cfe252343a4432698306
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:55:54 2014 -0500
 
     staging all files
 ```
@@ -116,5 +111,5 @@ library(ggplot2)
 ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
 ```
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
+<img src="figure/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
