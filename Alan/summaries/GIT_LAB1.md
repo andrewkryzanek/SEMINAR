@@ -27,7 +27,6 @@ git status
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
 #	modified:   GIT_LAB1.Rmd
-#	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
 no changes added to commit (use "git add" and/or "git commit -a")
@@ -41,8 +40,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 9093a6f] staging all files
- 3 files changed, 28 insertions(+), 22 deletions(-)
+[master 82be368] staging all files
+ 2 files changed, 13 insertions(+), 11 deletions(-)
 ```
 
 
@@ -83,6 +82,12 @@ git log  -3
 ```
 
 ```
+commit 82be368eff5269e4c793135b66ed1df3237b147d
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 12:56:04 2014 -0500
+
+    staging all files
+
 commit 9093a6fa5c3ef3642a61cfe252343a4432698306
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:55:54 2014 -0500
@@ -94,16 +99,16 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:51:44 2014 -0500
 
     staging all files
-
-commit 4d0c2ae650802fff2c6cf84845f82374cf66e251
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:50:31 2014 -0500
-
-    staging all files
 ```
 
 
 Now just to show how cool this is, we will mix in a little `R`.
 
 
+```r
+library(ggplot2)
+ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
+```
+
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
 
