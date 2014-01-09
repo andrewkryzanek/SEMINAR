@@ -1,5 +1,6 @@
+## Trying to ``git'' a clue
 
-## GIT
+### GIT
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
 
