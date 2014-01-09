@@ -43,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 8ea3736] staging all files
- 2 files changed, 30 insertions(+), 122 deletions(-)
+[master 6e5fbdc] staging all files
+ 2 files changed, 37 insertions(+), 19 deletions(-)
 ```
 
 
@@ -85,6 +85,12 @@ git log  -3
 ```
 
 ```
+commit 6e5fbdc88ac1ca323b17ce60a5499ed6bcd7a213
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 14:45:25 2014 -0500
+
+    staging all files
+
 commit 8ea373688b59cfee42c34103d93aad10418b42bb
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:43:51 2014 -0500
@@ -96,13 +102,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:43:26 2014 -0500
 
     change path
-
-commit 32fcfcd27cacd3617841de8350ed7e90cd5713e7
-Merge: 9fde576 3d1e3c2
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:42:33 2014 -0500
-
-    Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
 ```
 
 
