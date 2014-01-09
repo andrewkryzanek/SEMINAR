@@ -43,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master d717677] staging all files
- 2 files changed, 34 insertions(+), 8 deletions(-)
+[master 09b0060] staging all files
+ 2 files changed, 6 insertions(+), 12 deletions(-)
 ```
 
 

@@ -37,3 +37,7 @@ git push
 ```{r label = STATUS3}
 git status
 ```
+
+```{r label = LOG}
+git log
+```
