@@ -27,8 +27,13 @@ git status
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
 #	modified:   GIT_LAB1.Rmd
+#	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	figure/unnamed-chunk-1.png
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -40,8 +45,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 82be368] staging all files
- 2 files changed, 13 insertions(+), 11 deletions(-)
+[master 26f9df6] staging all files
+ 4 files changed, 68 insertions(+), 21 deletions(-)
+ create mode 100644 Alan/summaries/figure/unnamed-chunk-1.png
 ```
 
 
@@ -82,6 +88,12 @@ git log  -3
 ```
 
 ```
+commit 26f9df60327110f9e467d1dba3d714f598e11cc6
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 12:56:58 2014 -0500
+
+    staging all files
+
 commit 82be368eff5269e4c793135b66ed1df3237b147d
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:56:04 2014 -0500
@@ -93,16 +105,10 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:55:54 2014 -0500
 
     staging all files
-
-commit 086385ef960a1386abcf190cb2edf419938c2e90
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:51:44 2014 -0500
-
-    staging all files
 ```
 
 
-Now just to show how cool this is, we will mix in a little `R`.
+Now, just to show how cool this is, we will mix in a little `R`.
 
 
 ```r
