@@ -1,9 +1,6 @@
 ## GIT
-### Set up GIT
 
 First download and install the lastest version of [Git.](http://git-scm.com/downloads)
-
-
 
 
 
@@ -44,8 +41,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 086385e] staging all files
- 3 files changed, 50 insertions(+), 8 deletions(-)
+[master 9093a6f] staging all files
+ 3 files changed, 28 insertions(+), 22 deletions(-)
 ```
 
 
@@ -86,6 +83,12 @@ git log  -3
 ```
 
 ```
+commit 9093a6fa5c3ef3642a61cfe252343a4432698306
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 12:55:54 2014 -0500
+
+    staging all files
+
 commit 086385ef960a1386abcf190cb2edf419938c2e90
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:51:44 2014 -0500
@@ -97,11 +100,10 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 12:50:31 2014 -0500
 
     staging all files
-
-commit ea1ba5a7c17bf654078066fd05c4749829e9faf8
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:50:10 2014 -0500
-
-    staging all files
 ```
+
+
+Now just to show how cool this is, we will mix in a little `R`.
+
+
 

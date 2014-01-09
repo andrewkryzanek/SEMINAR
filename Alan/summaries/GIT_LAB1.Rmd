@@ -42,7 +42,7 @@ git log  -3
 
 Now just to show how cool this is, we will mix in a little `R`.
 
-```{r engine = 'r'}
+```{r engine = 'R'}
 library(ggplot2)
 ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
 ```
