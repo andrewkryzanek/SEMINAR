@@ -31,6 +31,10 @@ git status
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	GIT_LAB1.pdf
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -43,8 +47,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master e72d249] staging all files
- 3 files changed, 31 insertions(+), 21 deletions(-)
+[master 57da39b] staging all files
+ 4 files changed, 19 insertions(+), 19 deletions(-)
+ create mode 100644 Alan/summaries/GIT_LAB1.pdf
 ```
 
 
@@ -85,6 +90,12 @@ git log  -3
 ```
 
 ```
+commit 57da39b2cb5de992d3053608da06b1061b89c817
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 13:13:48 2014 -0500
+
+    staging all files
+
 commit e72d2495ec3ac3b3eb6503bb06b9c041b47efbcf
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:04:52 2014 -0500
@@ -94,12 +105,6 @@ Date:   Thu Jan 9 13:04:52 2014 -0500
 commit c3a6fa7178a17aa72e74ff242be2c885762bdeb1
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:02:10 2014 -0500
-
-    staging all files
-
-commit 6351cf47e98de580a2e90c2fed76d2ae33c2d211
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:57:44 2014 -0500
 
     staging all files
 ```
