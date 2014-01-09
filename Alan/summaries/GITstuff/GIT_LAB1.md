@@ -24,7 +24,14 @@ git status
 
 ```
 # On branch master
-nothing to commit, working directory clean
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
+#
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 
@@ -36,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-# On branch master
-nothing to commit, working directory clean
+[master 2e82a12] staging all files
+ 2 files changed, 19 insertions(+), 53 deletions(-)
 ```
 
 
@@ -49,6 +56,9 @@ git status
 
 ```
 # On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
 nothing to commit, working directory clean
 ```
 
@@ -76,6 +86,12 @@ git log  -3
 ```
 
 ```
+commit 2e82a12103b1235e42f47ec9aa9a8afa6f817f4e
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 18:36:04 2014 -0500
+
+    staging all files
+
 commit 673b36ca38e371a74f49f3af85e241d88066d8bc
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 18:34:32 2014 -0500
@@ -85,12 +101,6 @@ Date:   Thu Jan 9 18:34:32 2014 -0500
 commit 8b5c75f103adf864c7ff85bde024f7f0bd11de78
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 18:33:29 2014 -0500
-
-    staging all files
-
-commit 26369ba41f50bbe16f252489abd2761f7e8aab39
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 18:29:50 2014 -0500
 
     staging all files
 ```
