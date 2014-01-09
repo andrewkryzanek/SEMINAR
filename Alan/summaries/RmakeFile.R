@@ -1,0 +1,11 @@
+# Set working directory
+setwd("/Users/alan/git_repositories/SEMINAR/Alan/summaries")
+
+# Load packages
+require(knitr)
+require(markdown)
+
+# Create .md, .html, and .pdf files
+knit("GIT_LAB1.Rmd")
+markdownToHTML('GIT_LAB1.md', 'GIT_LAB1.html', options=c("use_xhml"))
+system("pandoc -s GIT_LAB1.html -o GIT_LAB1.pdf")
