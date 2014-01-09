@@ -1,0 +1,51 @@
+## Trying to ``git'' a clue
+
+
+Download and install the lastest version of [Git.](http://git-scm.com/downloads)
+
+```{r label = SETUP, echo = FALSE}
+opts_chunk$set(comment = NA, engine = "bash", fig.align="center", fig.height = 4, fig.width = 4, dev ="pdf")
+```
+
+If you have never used git before, you need to do some setup first.  Run the following commands so that git knows your name and email.  The third line adds pretty command line colors. 
+
+```{r label = GITsetup, eval = FALSE}
+git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+git config --global color.ui true
+```
+
+Check the current status of your repository:
+```{r label = STATUS}
+git status
+```
+
+Next all files are added to the staging area and a snapshot is taken of the commit with the message "staging all files".
+```{r label = ADD}
+git add .
+git commit  -m "staging all files"
+```
+
+Check the status after the last commit.
+```{r label = STATUS2}
+git status
+```
+Push changes to the remote repository. 
+```{r label = PUSH}
+git push
+```
+See if there is anything left to do.
+```{r label = STATUS3}
+git status
+```
+Show the last three commits with
+```{r label = LOG}
+git log  -3
+```
+
+Now, just to show how cool this is, we will mix in a little `R`.
+
+```{r engine = 'R'}
+library(ggplot2)
+ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
+```
