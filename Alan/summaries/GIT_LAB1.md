@@ -25,13 +25,17 @@ git status
 
 ```
 # On branch master
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
+# Your branch is ahead of 'origin/master' by 1 commit.
 #
-#	GIT_LAB1.Rmd
-#	GIT_LAB1.html
-#	GIT_LAB1.md
-nothing added to commit but untracked files present (use "git add" to track)
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   GIT_LAB1.Rmd
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
+#
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 
@@ -42,13 +46,21 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master fb3dfbc] staging all files
- 3 files changed, 243 insertions(+)
- create mode 100644 Alan/summaries/GIT_LAB1.Rmd
- create mode 100644 Alan/summaries/GIT_LAB1.html
- create mode 100644 Alan/summaries/GIT_LAB1.md
+[master 81ff747] staging all files
+ 3 files changed, 29 insertions(+), 1 deletion(-)
 ```
 
 
+
+```bash
+git status
+```
+
+```
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#
+nothing to commit (working directory clean)
+```
 
 

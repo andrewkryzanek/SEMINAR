@@ -30,3 +30,10 @@ git commit  -m "staging all files"
 git status
 ```
 
+```{r label = PUSH}
+git push
+```
+
+```{r label = STATUS3}
+git status
+```
