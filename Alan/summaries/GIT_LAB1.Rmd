@@ -29,7 +29,7 @@ git commit  -m "staging all files"
 ```{r label = STATUS2}
 git status
 ```
-
+Push changes to the remote repository: 
 ```{r label = PUSH}
 git push
 ```
@@ -38,7 +38,7 @@ git push
 git status
 ```
 
-Show the last three 
+Show the last three commits with
 ```{r label = LOG}
 git log  -3
 ```
