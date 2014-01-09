@@ -1,13 +1,3 @@
-<!--pandoc
-format: html
-s:
-mathjax:
-number-sections:
-
-format: latex
-number-sections:
--->
-
 
 ## GIT
 

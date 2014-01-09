@@ -55,8 +55,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master efa3ce2] staging all files
- 4 files changed, 37 insertions(+), 16 deletions(-)
+[master 62b13ea] staging all files
+ 4 files changed, 40 insertions(+), 27 deletions(-)
 ```
 
 
@@ -97,6 +97,12 @@ git log  -3
 ```
 
 ```
+commit 62b13eaa15cc08e1103b2cc4303b5544c9fc1cff
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 13:20:55 2014 -0500
+
+    staging all files
+
 commit efa3ce24f1d0b845f2ed4099542d9c5ef8219d25
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:17:17 2014 -0500
@@ -106,12 +112,6 @@ Date:   Thu Jan 9 13:17:17 2014 -0500
 commit 57da39b2cb5de992d3053608da06b1061b89c817
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:13:48 2014 -0500
-
-    staging all files
-
-commit e72d2495ec3ac3b3eb6503bb06b9c041b47efbcf
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 13:04:52 2014 -0500
 
     staging all files
 ```
@@ -125,5 +125,5 @@ library(ggplot2)
 ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
 ```
 
-<img src="figure/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-1.pdf" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
