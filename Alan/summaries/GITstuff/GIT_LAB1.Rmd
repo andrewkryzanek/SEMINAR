@@ -1,4 +1,4 @@
-## Trying to ``git'' a clue
+## Trying to ``git'' a Clue
 
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
