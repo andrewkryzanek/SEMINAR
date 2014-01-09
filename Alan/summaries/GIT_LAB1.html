@@ -159,7 +159,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
+# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
 #
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -176,16 +176,26 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 81ff747] staging all files
- 3 files changed, 29 insertions(+), 1 deletion(-)
+<pre><code>[master 72577b3] staging all files
+ 3 files changed, 51 insertions(+), 22 deletions(-)
 </code></pre>
 
 <pre><code class="bash">git status
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 3 commits.
 #
+nothing to commit (working directory clean)
+</code></pre>
+
+<pre><code class="bash">git push
+</code></pre>
+
+<pre><code class="bash">git status
+</code></pre>
+
+<pre><code># On branch master
 nothing to commit (working directory clean)
 </code></pre>
 

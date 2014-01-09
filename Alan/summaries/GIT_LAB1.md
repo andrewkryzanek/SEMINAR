@@ -25,7 +25,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
+# Your branch is ahead of 'origin/master' by 2 commits.
 #
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
@@ -46,8 +46,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 81ff747] staging all files
- 3 files changed, 29 insertions(+), 1 deletion(-)
+[master 72577b3] staging all files
+ 3 files changed, 51 insertions(+), 22 deletions(-)
 ```
 
 
@@ -58,9 +58,25 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 2 commits.
+# Your branch is ahead of 'origin/master' by 3 commits.
 #
 nothing to commit (working directory clean)
 ```
 
+
+
+```bash
+git push
+```
+
+
+
+```bash
+git status
+```
+
+```
+# On branch master
+nothing to commit (working directory clean)
+```
 
