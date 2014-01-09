@@ -196,18 +196,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
-#   (use &quot;git push&quot; to publish your local commits)
-#
-# Changes not staged for commit:
-#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-#
-#   modified:   GIT_LAB1.Rmd
-#   modified:   GIT_LAB1.html
-#   modified:   GIT_LAB1.md
-#
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Next all files are added to the staging area and a snapshot is taken of the commit with the message &quot;staging all files&rdquo;.</p>
@@ -216,8 +205,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 8b5c75f] staging all files
- 3 files changed, 46 insertions(+), 20 deletions(-)
+<pre><code># On branch master
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -226,9 +215,6 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
-#   (use &quot;git push&quot; to publish your local commits)
-#
 nothing to commit, working directory clean
 </code></pre>
 
@@ -243,9 +229,6 @@ nothing to commit, working directory clean
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
-#   (use &quot;git push&quot; to publish your local commits)
-#
 nothing to commit, working directory clean
 </code></pre>
 
@@ -254,7 +237,13 @@ nothing to commit, working directory clean
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 8b5c75f103adf864c7ff85bde024f7f0bd11de78
+<pre><code>commit 673b36ca38e371a74f49f3af85e241d88066d8bc
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Thu Jan 9 18:34:32 2014 -0500
+
+    add two files
+
+commit 8b5c75f103adf864c7ff85bde024f7f0bd11de78
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 18:33:29 2014 -0500
 
@@ -265,12 +254,6 @@ Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 18:29:50 2014 -0500
 
     staging all files
-
-commit 5dba12a7b2caeb0741decfb95f2d9defa7d621e2
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 17:00:17 2014 -0500
-
-    update
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
