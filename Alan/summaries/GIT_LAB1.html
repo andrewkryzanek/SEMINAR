@@ -200,8 +200,8 @@ git config --global color.ui true
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
 #   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
 #
-#   modified:   GIT_LAB1.html
 #   modified:   GIT_LAB1.md
+#   modified:   GIT_LAB1.pdf
 #   modified:   figure/unnamed-chunk-1.pdf
 #
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
@@ -213,8 +213,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 64a04e0] staging all files
- 3 files changed, 18 insertions(+), 40 deletions(-)
+<pre><code>[master 3a2ade5] staging all files
+ 3 files changed, 8 insertions(+), 8 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -247,21 +247,21 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 64a04e04da8a29c926a95dbe3fca2d44af58ebc7
+<pre><code>commit 3a2ade5197790f5dcfe2671a1c9e807cfa521153
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 14:06:06 2014 -0500
+Date:   Thu Jan 9 14:08:45 2014 -0500
 
     staging all files
 
-commit d839e6e2cd24844df2cacc8efa8be946768fa3ef
+commit 120c808d8e696cd277c543ca0e6fc9d343214a31
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 14:05:05 2014 -0500
+Date:   Thu Jan 9 14:08:12 2014 -0500
 
-    staging all files
+    add *.pdf to gitignore
 
-commit 97e8077b9e8488275e41155713c2b742d55c43f9
+commit 0d00a4eed3f21b7bc5d46e16689b5a324a0c6036
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 14:02:48 2014 -0500
+Date:   Thu Jan 9 14:06:28 2014 -0500
 
     staging all files
 </code></pre>
