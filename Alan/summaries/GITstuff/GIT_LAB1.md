@@ -24,7 +24,14 @@ git status
 
 ```
 # On branch master
-nothing to commit (working directory clean)
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
+#
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 
@@ -36,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-# On branch master
-nothing to commit (working directory clean)
+[master 8ea3736] staging all files
+ 2 files changed, 30 insertions(+), 122 deletions(-)
 ```
 
 
@@ -49,6 +56,8 @@ git status
 
 ```
 # On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
 nothing to commit (working directory clean)
 ```
 
@@ -76,6 +85,12 @@ git log  -3
 ```
 
 ```
+commit 8ea373688b59cfee42c34103d93aad10418b42bb
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 14:43:51 2014 -0500
+
+    staging all files
+
 commit 07c1788282ff95c59eba2d7effba3bfa1cf71e6f
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:43:26 2014 -0500
@@ -88,12 +103,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 14:42:33 2014 -0500
 
     Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
-
-commit 9fde576f6ee66a0412a44cc790c8a237b6f4c1d1
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:42:24 2014 -0500
-
-    remove and reorganize
 ```
 
 
