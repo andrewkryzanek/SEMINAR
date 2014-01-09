@@ -1,4 +1,4 @@
-## Trying to ``git'' a clue
+## Trying to ``git'' a Clue
 
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
@@ -24,10 +24,14 @@ git status
 
 ```
 # On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
+#	modified:   GIT_LAB1.Rmd
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
@@ -43,8 +47,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 26369ba] staging all files
- 2 files changed, 23 insertions(+), 41 deletions(-)
+[master 8b5c75f] staging all files
+ 3 files changed, 46 insertions(+), 20 deletions(-)
 ```
 
 
@@ -56,7 +60,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
+# Your branch is ahead of 'origin/master' by 2 commits.
 #   (use "git push" to publish your local commits)
 #
 nothing to commit, working directory clean
@@ -76,7 +80,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
+# Your branch is ahead of 'origin/master' by 2 commits.
 #   (use "git push" to publish your local commits)
 #
 nothing to commit, working directory clean
@@ -89,6 +93,12 @@ git log  -3
 ```
 
 ```
+commit 8b5c75f103adf864c7ff85bde024f7f0bd11de78
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 18:33:29 2014 -0500
+
+    staging all files
+
 commit 26369ba41f50bbe16f252489abd2761f7e8aab39
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 18:29:50 2014 -0500
@@ -100,12 +110,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 17:00:17 2014 -0500
 
     update
-
-commit c3bdcaa7e4e910ba10ea0b5e4de0396196fe027d
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 16:59:01 2014 -0500
-
-    staging all files
 ```
 
 
