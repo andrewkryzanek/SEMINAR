@@ -7,5 +7,5 @@ require(markdown)
 
 # Create .md, .html, and .pdf files
 knit("GIT_LAB1.Rmd")
-markdownToHTML('GIT_LAB1.md', 'GIT_LAB1.html', options=c("use_xhml"))
+# markdownToHTML('GIT_LAB1.md', 'GIT_LAB1.html', options=c("use_xhml"))
 system("pandoc -s GIT_LAB1.html -o GIT_LAB1.pdf -V geometry:margin=1in")
