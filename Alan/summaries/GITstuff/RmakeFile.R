@@ -1,5 +1,5 @@
 # Set working directory
-setwd("./GITstuff")
+setwd("./Alan/summaries/GITstuff")
 
 # Load packages
 require(knitr)

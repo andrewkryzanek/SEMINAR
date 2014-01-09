@@ -200,7 +200,6 @@ git config --global color.ui true
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
 #   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
 #
-#   modified:   GIT_LAB1.html
 #   modified:   GIT_LAB1.md
 #
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
@@ -212,8 +211,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 8ea3736] staging all files
- 2 files changed, 30 insertions(+), 122 deletions(-)
+<pre><code>[master bcc82f0] staging all files
+ 1 file changed, 8 insertions(+), 9 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -246,24 +245,23 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 8ea373688b59cfee42c34103d93aad10418b42bb
+<pre><code>commit bcc82f0c3e7489c160c49c78cc40e2e7ea52bb1f
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Thu Jan 9 16:57:50 2014 -0500
+
+    staging all files
+
+commit 6e5fbdc88ac1ca323b17ce60a5499ed6bcd7a213
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Thu Jan 9 14:45:25 2014 -0500
+
+    staging all files
+
+commit 8ea373688b59cfee42c34103d93aad10418b42bb
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 14:43:51 2014 -0500
 
     staging all files
-
-commit 07c1788282ff95c59eba2d7effba3bfa1cf71e6f
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 14:43:26 2014 -0500
-
-    change path
-
-commit 32fcfcd27cacd3617841de8350ed7e90cd5713e7
-Merge: 9fde576 3d1e3c2
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 14:42:33 2014 -0500
-
-    Merge branch &#39;master&#39; of https://github.com/alanarnholt/SEMINAR
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
