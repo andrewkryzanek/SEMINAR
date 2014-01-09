@@ -44,8 +44,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master d1110e5] staging all files
- 3 files changed, 139 insertions(+), 5 deletions(-)
+[master ea1ba5a] staging all files
+ 3 files changed, 19 insertions(+), 103 deletions(-)
 ```
 
 
@@ -81,26 +81,6 @@ nothing to commit (working directory clean)
 
 
 ```bash
-git log  -3
-```
-
-```
-commit d1110e569eff6a8ad8f724408560424bc5cea9a6
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:49:54 2014 -0500
-
-    staging all files
-
-commit 777ce3946c0dd546ad4cb6df4271afecd3042a58
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:47:30 2014 -0500
-
-    staging all files
-
-commit 09b0060c45bdb6c901e7f83f197818afec0993ea
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 12:46:01 2014 -0500
-
-    staging all files
+git log  --3
 ```
 

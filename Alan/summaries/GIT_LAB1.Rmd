@@ -38,6 +38,7 @@ git push
 git status
 ```
 
+Show the last three 
 ```{r label = LOG}
-git log  --3
+git log  -3
 ```
