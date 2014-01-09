@@ -196,14 +196,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Changes not staged for commit:
-#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-#
-#   modified:   GIT_LAB1.html
-#   modified:   GIT_LAB1.md
-#
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Next all files are added to the staging area and a snapshot is taken of the commit with the message &quot;staging all files&rdquo;.</p>
@@ -212,8 +205,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master e1e954f] staging all files
- 2 files changed, 39 insertions(+), 19 deletions(-)
+<pre><code># On branch master
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -222,9 +215,6 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
-#   (use &quot;git push&quot; to publish your local commits)
-#
 nothing to commit, working directory clean
 </code></pre>
 
@@ -247,7 +237,13 @@ nothing to commit, working directory clean
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit e1e954f9322dc231b7c6357fbbf2034c6f71a024
+<pre><code>commit 798cd4dce3cde19068a304a08459243b5711b1e9
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Thu Jan 9 18:51:22 2014 -0500
+
+    add two files
+
+commit e1e954f9322dc231b7c6357fbbf2034c6f71a024
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 18:50:51 2014 -0500
 
@@ -258,12 +254,6 @@ Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 18:36:04 2014 -0500
 
     staging all files
-
-commit 673b36ca38e371a74f49f3af85e241d88066d8bc
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 18:34:32 2014 -0500
-
-    add two files
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
