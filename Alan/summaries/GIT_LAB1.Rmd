@@ -1,0 +1,30 @@
+## GIT
+### Set up GIT
+
+First download and install the lastest version of [Git.](http://git-scm.com/downloads)
+
+
+
+```{r label = SETUP, echo = FALSE}
+opts_chunk$set(comment = NA, engine = "bash")
+```
+
+If you have never used git before, you need to do some setup first.  Run the following commands so that git knows your name and email.  The third line adds pretty command line colors. 
+
+```{r label = GITsetup, eval = FALSE}
+git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+git config --global color.ui true
+```
+
+```{r label = STATUS}
+git status
+```
+
+```{r label = ADD}
+git add .
+git commit  -m "staging all files"
+```
+
+
+
