@@ -43,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 780c76b] staging all files
- 2 files changed, 19 insertions(+), 39 deletions(-)
+[master d815dd6] staging all files
+ 2 files changed, 39 insertions(+), 19 deletions(-)
 ```
 
 
@@ -86,6 +86,12 @@ git log  -3
 ```
 
 ```
+commit d815dd692c235bbe498150a68ad14fa1b7cc52f4
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 18:52:59 2014 -0500
+
+    staging all files
+
 commit 780c76b5dfc75088765bfb027b69ba4217daae9a
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 18:52:06 2014 -0500
@@ -97,12 +103,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 18:51:22 2014 -0500
 
     add two files
-
-commit e1e954f9322dc231b7c6357fbbf2034c6f71a024
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 18:50:51 2014 -0500
-
-    staging all files
 ```
 
 
