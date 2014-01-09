@@ -28,10 +28,9 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   GIT_LAB1.Rmd
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
-#	modified:   GIT_LAB1.pdf
+#	modified:   figure/unnamed-chunk-1.png
 #
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -45,8 +44,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master ab57c28] staging all files
- 4 files changed, 25 insertions(+), 27 deletions(-)
+[master 49a00e1] staging all files
+ 3 files changed, 63 insertions(+), 28 deletions(-)
+ rewrite Alan/summaries/figure/unnamed-chunk-1.png (92%)
 ```
 
 
@@ -87,6 +87,12 @@ git log  -3
 ```
 
 ```
+commit 49a00e1242f9fef7fa7ca3286e37b39ae7c43ea2
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 13:47:40 2014 -0500
+
+    staging all files
+
 commit ab57c2888824468ae0bf98d3299de22a155a4b76
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:47:28 2014 -0500
@@ -96,12 +102,6 @@ Date:   Thu Jan 9 13:47:28 2014 -0500
 commit 058b17bf5b13cf635d2945de3b9c77a4a8af42bf
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 13:45:47 2014 -0500
-
-    staging all files
-
-commit 90ebcdf2e1447e5b248ed1c657b732dce319ecfa
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 13:42:16 2014 -0500
 
     staging all files
 ```
