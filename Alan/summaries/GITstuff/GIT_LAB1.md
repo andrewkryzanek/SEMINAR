@@ -1,4 +1,6 @@
 ## Trying to ``git'' a clue
+### Alan T. Arnholt
+
 
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
@@ -28,9 +30,7 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   GIT_LAB1.html
-#	modified:   GIT_LAB1.md
-#	modified:   RmakeFile.R
+#	modified:   GIT_LAB1.Rmd
 #
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -44,8 +44,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master c3bdcaa] staging all files
- 3 files changed, 19 insertions(+), 22 deletions(-)
+[master ef753d3] staging all files
+ 1 file changed, 2 insertions(+)
 ```
 
 
@@ -76,6 +76,8 @@ git status
 
 ```
 # On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
 nothing to commit (working directory clean)
 ```
 
@@ -86,21 +88,21 @@ git log  -3
 ```
 
 ```
+commit ef753d3b255faff8273db58067cbc030cd697b97
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 09:52:29 2014 -0500
+
+    staging all files
+
+commit 5dba12a7b2caeb0741decfb95f2d9defa7d621e2
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 17:00:17 2014 -0500
+
+    update
+
 commit c3bdcaa7e4e910ba10ea0b5e4de0396196fe027d
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 16:59:01 2014 -0500
-
-    staging all files
-
-commit bcc82f0c3e7489c160c49c78cc40e2e7ea52bb1f
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 16:57:50 2014 -0500
-
-    staging all files
-
-commit 6e5fbdc88ac1ca323b17ce60a5499ed6bcd7a213
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 14:45:25 2014 -0500
 
     staging all files
 ```

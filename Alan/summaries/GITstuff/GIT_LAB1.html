@@ -181,6 +181,8 @@ hljs.initHighlightingOnLoad();
 <body>
 <h2>Trying to &ldquo;git&#39;&#39; a clue</h2>
 
+<h3>Alan T. Arnholt</h3>
+
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
 
 <p>If you have never used git before, you need to do some setup first.  Run the following commands so that git knows your name and email.  The third line adds pretty command line colors. </p>
@@ -200,7 +202,7 @@ git config --global color.ui true
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
 #   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
 #
-#   modified:   GIT_LAB1.md
+#   modified:   GIT_LAB1.Rmd
 #
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre>
@@ -211,8 +213,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master bcc82f0] staging all files
- 1 file changed, 8 insertions(+), 9 deletions(-)
+<pre><code>[master ef753d3] staging all files
+ 1 file changed, 2 insertions(+)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -237,6 +239,8 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
+# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
+#
 nothing to commit (working directory clean)
 </code></pre>
 
@@ -245,21 +249,21 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit bcc82f0c3e7489c160c49c78cc40e2e7ea52bb1f
+<pre><code>commit ef753d3b255faff8273db58067cbc030cd697b97
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 16:57:50 2014 -0500
+Date:   Fri Jan 10 09:52:29 2014 -0500
 
     staging all files
 
-commit 6e5fbdc88ac1ca323b17ce60a5499ed6bcd7a213
+commit 5dba12a7b2caeb0741decfb95f2d9defa7d621e2
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 14:45:25 2014 -0500
+Date:   Thu Jan 9 17:00:17 2014 -0500
 
-    staging all files
+    update
 
-commit 8ea373688b59cfee42c34103d93aad10418b42bb
+commit c3bdcaa7e4e910ba10ea0b5e4de0396196fe027d
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 14:43:51 2014 -0500
+Date:   Thu Jan 9 16:59:01 2014 -0500
 
     staging all files
 </code></pre>
