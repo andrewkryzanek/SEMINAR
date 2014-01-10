@@ -24,7 +24,14 @@ git status
 
 ```
 # On branch master
-nothing to commit, working directory clean
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
+#
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 
@@ -36,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-# On branch master
-nothing to commit, working directory clean
+[master 6676bb3] staging all files
+ 2 files changed, 26 insertions(+), 54 deletions(-)
 ```
 
 
@@ -49,6 +56,9 @@ git status
 
 ```
 # On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
 nothing to commit, working directory clean
 ```
 
@@ -76,6 +86,12 @@ git log  -3
 ```
 
 ```
+commit 6676bb35624353fe0fa05e0a0b444fce13f8c03a
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 19:44:31 2014 -0500
+
+    staging all files
+
 commit 5dfd2d299768c21cfc2f866ded544cbc2777c2e9
 Merge: 3b36608 8f3e438
 Author: Alan Arnholt <arnholtat@appstate.edu>
@@ -88,12 +104,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 19:20:18 2014 -0500
 
     remove unnamed .png file
-
-commit 8f3e438f873b276dec0269d948a248f5d6d073f0
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:19:15 2014 -0500
-
-    Delete unnamed-chunk-1.png
 ```
 
 
