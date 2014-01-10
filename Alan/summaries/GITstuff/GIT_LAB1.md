@@ -28,6 +28,7 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
+#	modified:   GIT_LAB1.Rmd
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
@@ -43,8 +44,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master dd6ed64] staging all files
- 2 files changed, 39 insertions(+), 19 deletions(-)
+[master 32d5868] staging all files
+ 3 files changed, 18 insertions(+), 18 deletions(-)
 ```
 
 
@@ -86,6 +87,12 @@ git log  -3
 ```
 
 ```
+commit 32d586872c8b68c804f3167fe92ca97ff81f0ecd
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 19:11:05 2014 -0500
+
+    staging all files
+
 commit dd6ed6468a1b66932c6d26d59c682b25dfc271f5
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 19:08:55 2014 -0500
@@ -97,12 +104,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 19:06:54 2014 -0500
 
     staging all files
-
-commit f3486fdf83e6e347ad1c7e3885f878367b4cc50e
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:02:52 2014 -0500
-
-    add two files
 ```
 
 
@@ -114,5 +115,5 @@ library(ggplot2)
 ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
 ```
 
-<img src="figure/unnamed-chunk-1.pdf" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
