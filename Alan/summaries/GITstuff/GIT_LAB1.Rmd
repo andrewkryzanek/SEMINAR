@@ -1,4 +1,4 @@
-## Trying to ``git'' a Clue
+## Notes on GIT
 ### Alan T. Arnholt
 
 
