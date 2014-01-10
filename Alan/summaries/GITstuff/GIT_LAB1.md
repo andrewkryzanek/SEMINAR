@@ -8,7 +8,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:19:15."
+[1] "Friday, January 10, 2014 - 11:19:32."
 ```
 
 
@@ -59,7 +59,14 @@ git status
 
 ```
 # On branch master
-nothing to commit (working directory clean)
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
+#
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 The `git status` shows us what files are not staged for a commit.  Before files cna be
@@ -74,8 +81,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-# On branch master
-nothing to commit (working directory clean)
+[master 80ada2f] staging all files
+ 2 files changed, 98 insertions(+), 144 deletions(-)
 ```
 
 
@@ -87,6 +94,8 @@ git status
 
 ```
 # On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
 nothing to commit (working directory clean)
 ```
 
@@ -114,6 +123,12 @@ git log  -3
 ```
 
 ```
+commit 80ada2fa355f6cfea3ea417363d6d0906662841f
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:19:32 2014 -0500
+
+    staging all files
+
 commit c81e3cab3f234e57878e1b0ce3104ec07da63535
 Merge: fb4ebcc bddd5f6
 Author: Alan Arnholt <arnholtat@appstate.edu>
@@ -126,12 +141,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:12:02 2014 -0500
 
     add two files
-
-commit ce932f43b1e5bf50bdf36244b4812a77b764851d
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:11:11 2014 -0500
-
-    staging all files
 ```
 
 

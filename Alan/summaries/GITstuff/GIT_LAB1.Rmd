@@ -6,7 +6,7 @@
 >>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
 
 Last compiled:
-```{r Systime, echo = FALSE, comment = NA}
+```{r Systime, echo = FALSE, comment = NA, engine = "R"}
 format(Sys.time(), "%A, %B %d, %Y - %X.")
 ```
 

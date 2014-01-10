@@ -207,7 +207,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Friday, January 10, 2014 - 11:19:15.&quot;
+<pre><code>[1] &quot;Friday, January 10, 2014 - 11:19:32.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -244,7 +244,14 @@ the <code>Create repository</code> button and your GitHub repository will be cre
 </code></pre>
 
 <pre><code># On branch master
-nothing to commit (working directory clean)
+# Changes not staged for commit:
+#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+#
+#   modified:   GIT_LAB1.html
+#   modified:   GIT_LAB1.md
+#
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre>
 
 <p>The <code>git status</code> shows us what files are not staged for a commit.  Before files cna be
@@ -257,8 +264,8 @@ taken of the commit with the message &quot;staging all files&rdquo;.</p>
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code># On branch master
-nothing to commit (working directory clean)
+<pre><code>[master 80ada2f] staging all files
+ 2 files changed, 98 insertions(+), 144 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -267,6 +274,8 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
+# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
+#
 nothing to commit (working directory clean)
 </code></pre>
 
@@ -289,7 +298,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit c81e3cab3f234e57878e1b0ce3104ec07da63535
+<pre><code>commit 80ada2fa355f6cfea3ea417363d6d0906662841f
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 11:19:32 2014 -0500
+
+    staging all files
+
+commit c81e3cab3f234e57878e1b0ce3104ec07da63535
 Merge: fb4ebcc bddd5f6
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 11:18:43 2014 -0500
@@ -301,12 +316,6 @@ Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 11:12:02 2014 -0500
 
     add two files
-
-commit ce932f43b1e5bf50bdf36244b4812a77b764851d
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 11:11:11 2014 -0500
-
-    staging all files
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
