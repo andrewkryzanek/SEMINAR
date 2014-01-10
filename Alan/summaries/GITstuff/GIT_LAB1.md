@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:27:18."
+[1] "Friday, January 10, 2014 - 11:29:44."
 ```
 
 
@@ -79,8 +79,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 9887951] staging all files
- 3 files changed, 24 insertions(+), 20 deletions(-)
+[master b5593a4] staging all files
+ 3 files changed, 47 insertions(+), 15 deletions(-)
 ```
 
 
@@ -121,6 +121,12 @@ git log  -3
 ```
 
 ```
+commit b5593a448230d7841f1274bfc003d461dfd383de
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:29:44 2014 -0500
+
+    staging all files
+
 commit 9887951d2eddaaff6a4b998cf9508f9a02374a32
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:27:18 2014 -0500
@@ -130,12 +136,6 @@ Date:   Fri Jan 10 11:27:18 2014 -0500
 commit 2f34d0ab13b09e2ba0f79e3b1f900ea3cdd49641
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:22:18 2014 -0500
-
-    staging all files
-
-commit 0cad7cfb2634f03d5016927aabb01ff4ee3c93e6
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:21:08 2014 -0500
 
     staging all files
 ```
@@ -149,9 +149,23 @@ git log --pretty=oneline -3
 ```
 
 ```
+b5593a448230d7841f1274bfc003d461dfd383de staging all files
 9887951d2eddaaff6a4b998cf9508f9a02374a32 staging all files
 2f34d0ab13b09e2ba0f79e3b1f900ea3cdd49641 staging all files
-0cad7cfb2634f03d5016927aabb01ff4ee3c93e6 staging all files
+```
+
+
+Well that is certainly shorter.
+
+
+```bash
+git log --pretty=format:"%h %ad- %s [%an]" -3
+```
+
+```
+b5593a4 Fri Jan 10 11:29:44 2014 -0500- staging all files [Alan Arnholt]
+9887951 Fri Jan 10 11:27:18 2014 -0500- staging all files [Alan Arnholt]
+2f34d0a Fri Jan 10 11:22:18 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
