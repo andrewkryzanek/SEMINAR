@@ -207,7 +207,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Friday, January 10, 2014 - 11:19:32.&quot;
+<pre><code>[1] &quot;Friday, January 10, 2014 - 11:20:13.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -248,6 +248,7 @@ the <code>Create repository</code> button and your GitHub repository will be cre
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
 #   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
 #
+#   modified:   GIT_LAB1.Rmd
 #   modified:   GIT_LAB1.html
 #   modified:   GIT_LAB1.md
 #
@@ -264,8 +265,8 @@ taken of the commit with the message &quot;staging all files&rdquo;.</p>
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 80ada2f] staging all files
- 2 files changed, 98 insertions(+), 144 deletions(-)
+<pre><code>[master d1b7de3] staging all files
+ 3 files changed, 40 insertions(+), 22 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -298,7 +299,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 80ada2fa355f6cfea3ea417363d6d0906662841f
+<pre><code>commit d1b7de3e63405d3f8efb21f68fcd7bf2a8457bf0
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 11:20:13 2014 -0500
+
+    staging all files
+
+commit 80ada2fa355f6cfea3ea417363d6d0906662841f
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 11:19:32 2014 -0500
 
@@ -310,12 +317,6 @@ Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 11:18:43 2014 -0500
 
     new files
-
-commit fb4ebcc32bf623795d6ff95a81443124b7c154ee
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 11:12:02 2014 -0500
-
-    add two files
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>

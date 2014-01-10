@@ -8,7 +8,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:19:32."
+[1] "Friday, January 10, 2014 - 11:20:13."
 ```
 
 
@@ -63,6 +63,7 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
+#	modified:   GIT_LAB1.Rmd
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
@@ -81,8 +82,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 80ada2f] staging all files
- 2 files changed, 98 insertions(+), 144 deletions(-)
+[master d1b7de3] staging all files
+ 3 files changed, 40 insertions(+), 22 deletions(-)
 ```
 
 
@@ -123,6 +124,12 @@ git log  -3
 ```
 
 ```
+commit d1b7de3e63405d3f8efb21f68fcd7bf2a8457bf0
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:20:13 2014 -0500
+
+    staging all files
+
 commit 80ada2fa355f6cfea3ea417363d6d0906662841f
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:19:32 2014 -0500
@@ -135,12 +142,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:18:43 2014 -0500
 
     new files
-
-commit fb4ebcc32bf623795d6ff95a81443124b7c154ee
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:12:02 2014 -0500
-
-    add two files
 ```
 
 
