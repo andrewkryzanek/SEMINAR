@@ -24,18 +24,7 @@ git status
 
 ```
 # On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   GIT_LAB1.html
-#	modified:   GIT_LAB1.md
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	figure/Rgraph.png
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit, working directory clean
 ```
 
 
@@ -47,9 +36,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 0bf5396] staging all files
- 3 files changed, 28 insertions(+), 18 deletions(-)
- create mode 100644 Alan/summaries/GITstuff/figure/Rgraph.png
+# On branch master
+nothing to commit, working directory clean
 ```
 
 
@@ -61,9 +49,6 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#   (use "git push" to publish your local commits)
-#
 nothing to commit, working directory clean
 ```
 
@@ -91,23 +76,24 @@ git log  -3
 ```
 
 ```
-commit 0bf5396904fd319fbb9519d86db68bb4414d4e56
+commit 5dfd2d299768c21cfc2f866ded544cbc2777c2e9
+Merge: 3b36608 8f3e438
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:12:50 2014 -0500
+Date:   Thu Jan 9 19:20:40 2014 -0500
 
-    staging all files
+    Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
 
-commit a3b1d899fe72d54a0f4c146d0c8d26fae09b9c26
+commit 3b366081b36b638311ea0552809e8af38a15a4d7
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:11:46 2014 -0500
+Date:   Thu Jan 9 19:20:18 2014 -0500
 
-    staging all files
+    remove unnamed .png file
 
-commit 32d586872c8b68c804f3167fe92ca97ff81f0ecd
+commit 8f3e438f873b276dec0269d948a248f5d6d073f0
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:11:05 2014 -0500
+Date:   Thu Jan 9 19:19:15 2014 -0500
 
-    staging all files
+    Delete unnamed-chunk-1.png
 ```
 
 

@@ -196,18 +196,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Changes not staged for commit:
-#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-#
-#   modified:   GIT_LAB1.html
-#   modified:   GIT_LAB1.md
-#
-# Untracked files:
-#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-#
-#   figure/Rgraph.png
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Next all files are added to the staging area and a snapshot is taken of the commit with the message &quot;staging all files&rdquo;.</p>
@@ -216,9 +205,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 0bf5396] staging all files
- 3 files changed, 28 insertions(+), 18 deletions(-)
- create mode 100644 Alan/summaries/GITstuff/figure/Rgraph.png
+<pre><code># On branch master
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -227,9 +215,6 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
-#   (use &quot;git push&quot; to publish your local commits)
-#
 nothing to commit, working directory clean
 </code></pre>
 
@@ -252,23 +237,24 @@ nothing to commit, working directory clean
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 0bf5396904fd319fbb9519d86db68bb4414d4e56
+<pre><code>commit 5dfd2d299768c21cfc2f866ded544cbc2777c2e9
+Merge: 3b36608 8f3e438
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 19:12:50 2014 -0500
+Date:   Thu Jan 9 19:20:40 2014 -0500
 
-    staging all files
+    Merge branch &#39;master&#39; of https://github.com/alanarnholt/SEMINAR
 
-commit a3b1d899fe72d54a0f4c146d0c8d26fae09b9c26
+commit 3b366081b36b638311ea0552809e8af38a15a4d7
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 19:11:46 2014 -0500
+Date:   Thu Jan 9 19:20:18 2014 -0500
 
-    staging all files
+    remove unnamed .png file
 
-commit 32d586872c8b68c804f3167fe92ca97ff81f0ecd
+commit 8f3e438f873b276dec0269d948a248f5d6d073f0
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 19:11:05 2014 -0500
+Date:   Thu Jan 9 19:19:15 2014 -0500
 
-    staging all files
+    Delete unnamed-chunk-1.png
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
