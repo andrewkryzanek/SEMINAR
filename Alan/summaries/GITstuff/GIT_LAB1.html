@@ -185,7 +185,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Friday, January 10, 2014 - 10:55:19.&quot;
+<pre><code>[1] &quot;Friday, January 10, 2014 - 11:05:24.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -204,11 +204,17 @@ git config --global color.ui true
 
 <p>If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.</p>
 
-<h3>Creating a Repository</h3>
+<h3>Creating a GitHub Account</h3>
+
+<p>Point your browser to <a href="https://github.com">https://github.com</a>,
+type a username in the <code>Pick a username</code> box (please use <code>firstlast</code>, for example my username is <code>alanarnholt</code>), enter your email (use your school email) in the <code>Your email</code> box, type in your password in the <code>Create a password</code> box. Then, click the <code>Sign up for GitHub</code> box and you will have a GitHub account.</p>
+
+<h3>Creating a GitHub Repository</h3>
 
 <p>In order to push your local work to a remote repository, you will first need to create
-the remote repository.  Point your browser to <a href="https://github.com">https://github.com</a>,
-type a username in the <code>Pick a username</code> box (please use <code>firstlast</code>, for example my username is <code>alanarnholt</code>), enter your email (use your school email) in the <code>Your email</code> box, type in your password in the <code>Create a password</code> box. Then, click the <code>Sign up for GitHub</code> box and you will have a GitHub account.</p>
+the remote repository. Log into your GitHub account, click the <code>New repository</code> button,
+then give your repository a name and optionally a description.  When you finish, click 
+the <code>Create repository</code> button and your GitHub repository will be created.  This document is stored in the repository <a href="https://github.com/alanarnholt/SEMINAR">https://github.com/alanarnholt/SEMINAR</a> in the folder <a href="https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff">https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff</a>. </p>
 
 <p>Check the current status of your repository:</p>
 
@@ -216,7 +222,7 @@ type a username in the <code>Pick a username</code> box (please use <code>firstl
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 9 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 10 commits.
 #
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -235,8 +241,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 94d1a8a] staging all files
- 3 files changed, 51 insertions(+), 34 deletions(-)
+<pre><code>[master 5c1de98] staging all files
+ 3 files changed, 37 insertions(+), 29 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -245,7 +251,7 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 10 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 11 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -261,7 +267,7 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 10 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 11 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -271,7 +277,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 94d1a8adb6fd762fa36506e9f2f0d2afa5f1003c
+<pre><code>commit 5c1de980befd3b4970fe3e0b5dee812386ea3087
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 11:05:24 2014 -0500
+
+    staging all files
+
+commit 94d1a8adb6fd762fa36506e9f2f0d2afa5f1003c
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 10:55:19 2014 -0500
 
@@ -280,12 +292,6 @@ Date:   Fri Jan 10 10:55:19 2014 -0500
 commit 8ab7c0bb4943629cea0609a2a9520291836bc852
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 10:53:36 2014 -0500
-
-    staging all files
-
-commit bdf3e2d4875b68ac2e386482289b4404df731956
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 10:39:20 2014 -0500
 
     staging all files
 </code></pre>

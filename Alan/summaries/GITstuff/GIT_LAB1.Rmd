@@ -44,12 +44,15 @@ then give your repository a name and optionally a description.  When you finish,
 the `Create repository` button and your GitHub repository will be created.  This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
 
 
-Check the current status of your repository:
+To check the current status of your repository type:
 ```{r label = STATUS}
 git status
 ```
-
-Next all files are added to the staging area and a snapshot is taken of the commit with the message "staging all files".
+The `git status` shows us what files are not staged for a commit.  Before files cna be
+committed, they must be added to the staging area.  Files are added to the stating area
+with the command `git add file_name`.  To add all files in the working directory, one
+can use `git add .`  Next all files are added to the staging area and a snapshot is 
+taken of the commit with the message "staging all files".
 ```{r label = ADD}
 git add .
 git commit  -m "staging all files"
