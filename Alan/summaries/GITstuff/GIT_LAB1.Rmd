@@ -1,4 +1,6 @@
 ## Trying to ``git'' a clue
+### Alan T. Arnholt
+
 
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
