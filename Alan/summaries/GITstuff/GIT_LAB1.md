@@ -3,12 +3,11 @@
 ### Alan T. Arnholt
 =======
 ## Trying to ``git'' a Clue
->>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
 
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:20:13."
+[1] "Friday, January 10, 2014 - 11:20:40."
 ```
 
 
@@ -82,8 +81,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master d1b7de3] staging all files
- 3 files changed, 40 insertions(+), 22 deletions(-)
+[master 3e90968] staging all files
+ 3 files changed, 21 insertions(+), 20 deletions(-)
 ```
 
 
@@ -124,6 +123,12 @@ git log  -3
 ```
 
 ```
+commit 3e909689ad362fc1bc7df7f1cae79aa804a49c9d
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:20:40 2014 -0500
+
+    staging all files
+
 commit d1b7de3e63405d3f8efb21f68fcd7bf2a8457bf0
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:20:13 2014 -0500
@@ -135,13 +140,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:19:32 2014 -0500
 
     staging all files
-
-commit c81e3cab3f234e57878e1b0ce3104ec07da63535
-Merge: fb4ebcc bddd5f6
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:18:43 2014 -0500
-
-    new files
 ```
 
 

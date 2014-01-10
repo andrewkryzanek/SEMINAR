@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## GIT - Notes
 ### Alan T. Arnholt
 =======
