@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:22:18."
+[1] "Friday, January 10, 2014 - 11:27:18."
 ```
 
 
@@ -60,6 +60,7 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
+#	modified:   GIT_LAB1.Rmd
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
@@ -78,8 +79,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 2f34d0a] staging all files
- 2 files changed, 19 insertions(+), 25 deletions(-)
+[master 9887951] staging all files
+ 3 files changed, 24 insertions(+), 20 deletions(-)
 ```
 
 
@@ -120,6 +121,12 @@ git log  -3
 ```
 
 ```
+commit 9887951d2eddaaff6a4b998cf9508f9a02374a32
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:27:18 2014 -0500
+
+    staging all files
+
 commit 2f34d0ab13b09e2ba0f79e3b1f900ea3cdd49641
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:22:18 2014 -0500
@@ -131,12 +138,20 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:21:08 2014 -0500
 
     staging all files
+```
 
-commit 893491189d50f78eebcd1d65352f44aac461a3ce
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:20:47 2014 -0500
 
-    staging all files
+That was ugly. Let us try some formatting.
+
+
+```bash
+git log --pretty=oneline -3
+```
+
+```
+9887951d2eddaaff6a4b998cf9508f9a02374a32 staging all files
+2f34d0ab13b09e2ba0f79e3b1f900ea3cdd49641 staging all files
+0cad7cfb2634f03d5016927aabb01ff4ee3c93e6 staging all files
 ```
 
 
