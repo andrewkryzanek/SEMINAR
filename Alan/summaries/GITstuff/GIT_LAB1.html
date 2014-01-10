@@ -185,7 +185,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Friday, January 10, 2014 - 11:05:24.&quot;
+<pre><code>[1] &quot;Friday, January 10, 2014 - 11:11:11.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -216,13 +216,13 @@ the remote repository. Log into your GitHub account, click the <code>New reposit
 then give your repository a name and optionally a description.  When you finish, click 
 the <code>Create repository</code> button and your GitHub repository will be created.  This document is stored in the repository <a href="https://github.com/alanarnholt/SEMINAR">https://github.com/alanarnholt/SEMINAR</a> in the folder <a href="https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff">https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff</a>. </p>
 
-<p>Check the current status of your repository:</p>
+<p>To check the current status of your repository type:</p>
 
 <pre><code class="bash">git status
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 10 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 11 commits.
 #
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -235,14 +235,18 @@ the <code>Create repository</code> button and your GitHub repository will be cre
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre>
 
-<p>Next all files are added to the staging area and a snapshot is taken of the commit with the message &ldquo;staging all files&rdquo;.</p>
+<p>The <code>git status</code> shows us what files are not staged for a commit.  Before files cna be
+committed, they must be added to the staging area.  Files are added to the stating area
+with the command <code>git add file_name</code>.  To add all files in the working directory, one
+can use <code>git add .</code>  Next all files are added to the staging area and a snapshot is 
+taken of the commit with the message &ldquo;staging all files&rdquo;.</p>
 
 <pre><code class="bash">git add .
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 5c1de98] staging all files
- 3 files changed, 37 insertions(+), 29 deletions(-)
+<pre><code>[master ce932f4] staging all files
+ 3 files changed, 50 insertions(+), 33 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -251,7 +255,7 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 11 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 12 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -267,7 +271,7 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 11 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 12 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -277,7 +281,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 5c1de980befd3b4970fe3e0b5dee812386ea3087
+<pre><code>commit ce932f43b1e5bf50bdf36244b4812a77b764851d
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 11:11:11 2014 -0500
+
+    staging all files
+
+commit 5c1de980befd3b4970fe3e0b5dee812386ea3087
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 11:05:24 2014 -0500
 
@@ -286,12 +296,6 @@ Date:   Fri Jan 10 11:05:24 2014 -0500
 commit 94d1a8adb6fd762fa36506e9f2f0d2afa5f1003c
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 10:55:19 2014 -0500
-
-    staging all files
-
-commit 8ab7c0bb4943629cea0609a2a9520291836bc852
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 10:53:36 2014 -0500
 
     staging all files
 </code></pre>

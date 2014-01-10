@@ -4,7 +4,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:05:24."
+[1] "Friday, January 10, 2014 - 11:11:11."
 ```
 
 
@@ -47,7 +47,7 @@ then give your repository a name and optionally a description.  When you finish,
 the `Create repository` button and your GitHub repository will be created.  This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
 
 
-Check the current status of your repository:
+To check the current status of your repository type:
 
 ```bash
 git status
@@ -55,7 +55,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 10 commits.
+# Your branch is ahead of 'origin/master' by 11 commits.
 #
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
@@ -68,8 +68,11 @@ git status
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-
-Next all files are added to the staging area and a snapshot is taken of the commit with the message "staging all files".
+The `git status` shows us what files are not staged for a commit.  Before files cna be
+committed, they must be added to the staging area.  Files are added to the stating area
+with the command `git add file_name`.  To add all files in the working directory, one
+can use `git add .`  Next all files are added to the staging area and a snapshot is 
+taken of the commit with the message "staging all files".
 
 ```bash
 git add .
@@ -77,8 +80,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 5c1de98] staging all files
- 3 files changed, 37 insertions(+), 29 deletions(-)
+[master ce932f4] staging all files
+ 3 files changed, 50 insertions(+), 33 deletions(-)
 ```
 
 
@@ -90,7 +93,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 11 commits.
+# Your branch is ahead of 'origin/master' by 12 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -109,7 +112,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 11 commits.
+# Your branch is ahead of 'origin/master' by 12 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -121,6 +124,12 @@ git log  -3
 ```
 
 ```
+commit ce932f43b1e5bf50bdf36244b4812a77b764851d
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:11:11 2014 -0500
+
+    staging all files
+
 commit 5c1de980befd3b4970fe3e0b5dee812386ea3087
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:05:24 2014 -0500
@@ -130,12 +139,6 @@ Date:   Fri Jan 10 11:05:24 2014 -0500
 commit 94d1a8adb6fd762fa36506e9f2f0d2afa5f1003c
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 10:55:19 2014 -0500
-
-    staging all files
-
-commit 8ab7c0bb4943629cea0609a2a9520291836bc852
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 10:53:36 2014 -0500
 
     staging all files
 ```
