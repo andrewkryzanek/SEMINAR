@@ -30,11 +30,19 @@ git config --global color.ui true
 
 If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.
 
-### Creating a Repository
+### Creating a GitHub Account
+
+Point your browser to [https://github.com](https://github.com),
+type a username in the `Pick a username` box (please use `firstlast`, for example my username is `alanarnholt`), enter your email (use your school email) in the `Your email` box, type in your password in the `Create a password` box. Then, click the `Sign up for GitHub` box and you will have a GitHub account.
+
+
+### Creating a GitHub Repository
 
 In order to push your local work to a remote repository, you will first need to create
-the remote repository.  Point your browser to [https://github.com](https://github.com),
-type a username in the `Pick a username` box (please use `firstlast`, for example my username is `alanarnholt`), enter your email (use your school email) in the `Your email` box, type in your password in the `Create a password` box. Then, click the `Sign up for GitHub` box and you will have a GitHub account.
+the remote repository. Log into your GitHub account, click the `New repository` button,
+then give your repository a name and optionally a description.  When you finish, click 
+the `Create repository` button and your GitHub repository will be created.  This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
+
 
 Check the current status of your repository:
 ```{r label = STATUS}

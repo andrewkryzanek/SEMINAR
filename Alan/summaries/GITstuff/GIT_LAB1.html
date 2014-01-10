@@ -185,7 +185,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Friday, January 10, 2014 - 10:53:36.&quot;
+<pre><code>[1] &quot;Friday, January 10, 2014 - 10:55:19.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -208,7 +208,7 @@ git config --global color.ui true
 
 <p>In order to push your local work to a remote repository, you will first need to create
 the remote repository.  Point your browser to <a href="https://github.com">https://github.com</a>,
-enter a username (please use <code>firstlast</code>, for example my username is <code>alanarnholt</code>), enter your email (use your school email), type in your password in the <code>Create a password</code> box then click the <code>Sign up for GitHub</code> box.</p>
+type a username in the <code>Pick a username</code> box (please use <code>firstlast</code>, for example my username is <code>alanarnholt</code>), enter your email (use your school email) in the <code>Your email</code> box, type in your password in the <code>Create a password</code> box. Then, click the <code>Sign up for GitHub</code> box and you will have a GitHub account.</p>
 
 <p>Check the current status of your repository:</p>
 
@@ -216,7 +216,7 @@ enter a username (please use <code>firstlast</code>, for example my username is 
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 8 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 9 commits.
 #
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -235,8 +235,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 8ab7c0b] staging all files
- 3 files changed, 39 insertions(+), 31 deletions(-)
+<pre><code>[master 94d1a8a] staging all files
+ 3 files changed, 51 insertions(+), 34 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -245,7 +245,7 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 9 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 10 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -261,7 +261,7 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 9 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 10 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -271,7 +271,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 8ab7c0bb4943629cea0609a2a9520291836bc852
+<pre><code>commit 94d1a8adb6fd762fa36506e9f2f0d2afa5f1003c
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 10:55:19 2014 -0500
+
+    staging all files
+
+commit 8ab7c0bb4943629cea0609a2a9520291836bc852
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 10:53:36 2014 -0500
 
@@ -280,12 +286,6 @@ Date:   Fri Jan 10 10:53:36 2014 -0500
 commit bdf3e2d4875b68ac2e386482289b4404df731956
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 10:39:20 2014 -0500
-
-    staging all files
-
-commit 2585ccfb25cd1d0e5b3af8784c358c038e14073b
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 10:38:45 2014 -0500
 
     staging all files
 </code></pre>

@@ -4,7 +4,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 10:53:36."
+[1] "Friday, January 10, 2014 - 10:55:19."
 ```
 
 
@@ -37,7 +37,7 @@ If you do not want to type your username and password every time you work with a
 
 In order to push your local work to a remote repository, you will first need to create
 the remote repository.  Point your browser to [https://github.com](https://github.com),
-enter a username (please use `firstlast`, for example my username is `alanarnholt`), enter your email (use your school email), type in your password in the `Create a password` box then click the `Sign up for GitHub` box.
+type a username in the `Pick a username` box (please use `firstlast`, for example my username is `alanarnholt`), enter your email (use your school email) in the `Your email` box, type in your password in the `Create a password` box. Then, click the `Sign up for GitHub` box and you will have a GitHub account.
 
 Check the current status of your repository:
 
@@ -47,7 +47,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 8 commits.
+# Your branch is ahead of 'origin/master' by 9 commits.
 #
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
@@ -69,8 +69,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 8ab7c0b] staging all files
- 3 files changed, 39 insertions(+), 31 deletions(-)
+[master 94d1a8a] staging all files
+ 3 files changed, 51 insertions(+), 34 deletions(-)
 ```
 
 
@@ -82,7 +82,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 9 commits.
+# Your branch is ahead of 'origin/master' by 10 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -101,7 +101,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 9 commits.
+# Your branch is ahead of 'origin/master' by 10 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -113,6 +113,12 @@ git log  -3
 ```
 
 ```
+commit 94d1a8adb6fd762fa36506e9f2f0d2afa5f1003c
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 10:55:19 2014 -0500
+
+    staging all files
+
 commit 8ab7c0bb4943629cea0609a2a9520291836bc852
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 10:53:36 2014 -0500
@@ -122,12 +128,6 @@ Date:   Fri Jan 10 10:53:36 2014 -0500
 commit bdf3e2d4875b68ac2e386482289b4404df731956
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 10:39:20 2014 -0500
-
-    staging all files
-
-commit 2585ccfb25cd1d0e5b3af8784c358c038e14073b
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 10:38:45 2014 -0500
 
     staging all files
 ```
