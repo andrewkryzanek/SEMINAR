@@ -185,7 +185,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Friday, January 10, 2014 - 10:38:45.&quot;
+<pre><code>[1] &quot;Friday, January 10, 2014 - 10:39:20.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -194,7 +194,7 @@ hljs.initHighlightingOnLoad();
 commands so that git knows your name and email.  The third line adds pretty command 
 line colors.  The commands are all issued in the Terminal (MAC) or at the command prompt
 (Windows).  The Terminal application is usually found in <code>/applications/Utilities</code>.
-To open a command prompt, click on the Windows icon, -&gt; All Programs -&gt; Accessories, and then Command Prompt.</p>
+To open a command prompt, click on the Windows icon -&gt; All Programs -&gt; Accessories -&gt; Command Prompt.</p>
 
 <pre><code class="bash">git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;your_email@whatever.com&quot;
@@ -207,7 +207,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 6 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 7 commits.
 #
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -226,8 +226,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 2585ccf] staging all files
- 3 files changed, 38 insertions(+), 28 deletions(-)
+<pre><code>[master bdf3e2d] staging all files
+ 3 files changed, 27 insertions(+), 27 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -236,7 +236,7 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 7 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 8 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -252,7 +252,7 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 7 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 8 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -262,7 +262,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 2585ccfb25cd1d0e5b3af8784c358c038e14073b
+<pre><code>commit bdf3e2d4875b68ac2e386482289b4404df731956
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 10:39:20 2014 -0500
+
+    staging all files
+
+commit 2585ccfb25cd1d0e5b3af8784c358c038e14073b
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 10:38:45 2014 -0500
 
@@ -271,12 +277,6 @@ Date:   Fri Jan 10 10:38:45 2014 -0500
 commit 0109b392dd09a6d8bafb5789cedc07f93a779ec5
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 10:37:58 2014 -0500
-
-    staging all files
-
-commit 8fd85f7fbc71094b46418fce8997a5a9b649367e
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 10:27:03 2014 -0500
 
     staging all files
 </code></pre>

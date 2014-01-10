@@ -15,11 +15,11 @@ opts_chunk$set(comment = NA, engine = "bash", fig.align="center", fig.height = 4
 ```
 
 If you have never used git before, you need to do some setup first.  Run the following
-commands so that git knows your name and email.  The third line adds pretty command 
-line colors.  The commands are all issued in the Terminal (MAC) or at the command prompt
-(Windows).  The Terminal application is usually found in `/applications/Utilities`.
-To open a command prompt, click on the Windows icon -> All Programs -> Accessories -> Command Prompt.
-
+commands so that git knows your name and email.  The commands are all issued in the
+Terminal (MAC) or at the command prompt (Windows).  The Terminal application is 
+usually found in `/applications/Utilities`.  To open a command prompt, click on the 
+Windows icon -> All Programs -> Accessories -> Command Prompt.  The third line adds 
+pretty command line colors.  
 
 
 ```{r label = GITsetup, eval = FALSE}
@@ -27,6 +27,14 @@ git config --global user.name "Your Name"
 git config --global user.email "your_email@whatever.com"
 git config --global color.ui true
 ```
+
+If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.
+
+### Creating a Repository
+
+In order to push your local work to a remote repository, you will first need to create
+the remote repository.  Point your browser to [https://github.com](https://github.com),
+enter a username (please use `firstlast`, for example my username is `alanarnholt`), enter your email (use your school email), type in your password in the `Create a password` box then click the `Sign up for GitHub` box.
 
 Check the current status of your repository:
 ```{r label = STATUS}
