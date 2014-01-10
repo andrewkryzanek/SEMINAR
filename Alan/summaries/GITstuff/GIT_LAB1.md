@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## GIT - Notes
 ### Alan T. Arnholt
 =======
@@ -7,7 +7,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:20:40."
+[1] "Friday, January 10, 2014 - 11:20:47."
 ```
 
 
@@ -81,8 +81,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 3e90968] staging all files
- 3 files changed, 21 insertions(+), 20 deletions(-)
+[master 8934911] staging all files
+ 3 files changed, 20 insertions(+), 39 deletions(-)
 ```
 
 
@@ -123,6 +123,12 @@ git log  -3
 ```
 
 ```
+commit 893491189d50f78eebcd1d65352f44aac461a3ce
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:20:47 2014 -0500
+
+    staging all files
+
 commit 3e909689ad362fc1bc7df7f1cae79aa804a49c9d
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:20:40 2014 -0500
@@ -132,12 +138,6 @@ Date:   Fri Jan 10 11:20:40 2014 -0500
 commit d1b7de3e63405d3f8efb21f68fcd7bf2a8457bf0
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:20:13 2014 -0500
-
-    staging all files
-
-commit 80ada2fa355f6cfea3ea417363d6d0906662841f
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:19:32 2014 -0500
 
     staging all files
 ```

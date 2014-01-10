@@ -1,8 +1,6 @@
 
 ## GIT - Notes
 ### Alan T. Arnholt
-=======
-## Trying to ``git'' a Clue
 
 Last compiled:
 ```{r Systime, echo = FALSE, comment = NA, engine = "R"}
