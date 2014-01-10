@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=9" >
 
-<title>Notes on GIT</title>
+<title>GIT - Notes</title>
 
 <style type="text/css">
 body, td {
@@ -179,7 +179,7 @@ hljs.initHighlightingOnLoad();
 </head>
 
 <body>
-<h2>Notes on GIT</h2>
+<h2>GIT - Notes</h2>
 
 <h3>Alan T. Arnholt</h3>
 
@@ -198,7 +198,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 3 commits.
 #
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -217,8 +217,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 5d5333c] staging all files
- 3 files changed, 33 insertions(+), 25 deletions(-)
+<pre><code>[master 2b8c81d] staging all files
+ 3 files changed, 28 insertions(+), 28 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -227,7 +227,7 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 3 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 4 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -243,7 +243,7 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 3 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 4 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -253,7 +253,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 5d5333c1f042ffa983f8f062336c8d542a0f0b09
+<pre><code>commit 2b8c81d787ff5271fb5ea59f605a7c238c035d51
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 09:53:28 2014 -0500
+
+    staging all files
+
+commit 5d5333c1f042ffa983f8f062336c8d542a0f0b09
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 09:53:10 2014 -0500
 
@@ -262,12 +268,6 @@ Date:   Fri Jan 10 09:53:10 2014 -0500
 commit 2c68b5aa4b4f7b3b060abab28a81c9952c7a3038
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 09:52:42 2014 -0500
-
-    staging all files
-
-commit ef753d3b255faff8273db58067cbc030cd697b97
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 09:52:29 2014 -0500
 
     staging all files
 </code></pre>

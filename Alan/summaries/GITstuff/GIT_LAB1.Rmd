@@ -1,6 +1,11 @@
 ## GIT - Notes
 ### Alan T. Arnholt
 
+Last compiled:
+```{r Systime, echo = FALSE, comment = NA}
+format(Sys.time(), "%A, %B %d, %Y - %X.")
+```
+
 
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
