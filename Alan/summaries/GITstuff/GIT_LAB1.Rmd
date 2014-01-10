@@ -18,7 +18,7 @@ If you have never used git before, you need to do some setup first.  Run the fol
 commands so that git knows your name and email.  The third line adds pretty command 
 line colors.  The commands are all issued in the Terminal (MAC) or at the command prompt
 (Windows).  The Terminal application is usually found in `/applications/Utilities`.
-To open a command prompt, click on the Windows icon, -> All Programs -> Accessories, and then Command Prompt.
+To open a command prompt, click on the Windows icon -> All Programs -> Accessories -> Command Prompt.
 
 
 

@@ -4,7 +4,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 10:37:58."
+[1] "Friday, January 10, 2014 - 10:38:45."
 ```
 
 
@@ -19,7 +19,7 @@ If you have never used git before, you need to do some setup first.  Run the fol
 commands so that git knows your name and email.  The third line adds pretty command 
 line colors.  The commands are all issued in the Terminal (MAC) or at the command prompt
 (Windows).  The Terminal application is usually found in `/applications/Utilities`.
-To open a command prompt click on the windows icon, All Programs, Accessories, and then Command Prompt.
+To open a command prompt, click on the Windows icon, -> All Programs -> Accessories, and then Command Prompt.
 
 
 
@@ -39,7 +39,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 5 commits.
+# Your branch is ahead of 'origin/master' by 6 commits.
 #
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
@@ -61,8 +61,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 0109b39] staging all files
- 3 files changed, 42 insertions(+), 24 deletions(-)
+[master 2585ccf] staging all files
+ 3 files changed, 38 insertions(+), 28 deletions(-)
 ```
 
 
@@ -74,7 +74,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 6 commits.
+# Your branch is ahead of 'origin/master' by 7 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -93,7 +93,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 6 commits.
+# Your branch is ahead of 'origin/master' by 7 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -105,6 +105,12 @@ git log  -3
 ```
 
 ```
+commit 2585ccfb25cd1d0e5b3af8784c358c038e14073b
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 10:38:45 2014 -0500
+
+    staging all files
+
 commit 0109b392dd09a6d8bafb5789cedc07f93a779ec5
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 10:37:58 2014 -0500
@@ -114,12 +120,6 @@ Date:   Fri Jan 10 10:37:58 2014 -0500
 commit 8fd85f7fbc71094b46418fce8997a5a9b649367e
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 10:27:03 2014 -0500
-
-    staging all files
-
-commit 2b8c81d787ff5271fb5ea59f605a7c238c035d51
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 09:53:28 2014 -0500
 
     staging all files
 ```
