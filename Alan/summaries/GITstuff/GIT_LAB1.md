@@ -1,13 +1,11 @@
 
 ## GIT - Notes
 ### Alan T. Arnholt
-=======
-## Trying to ``git'' a Clue
 
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:20:47."
+[1] "Friday, January 10, 2014 - 11:21:08."
 ```
 
 
@@ -81,8 +79,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 8934911] staging all files
- 3 files changed, 20 insertions(+), 39 deletions(-)
+[master 0cad7cf] staging all files
+ 3 files changed, 19 insertions(+), 23 deletions(-)
 ```
 
 
@@ -123,6 +121,12 @@ git log  -3
 ```
 
 ```
+commit 0cad7cfb2634f03d5016927aabb01ff4ee3c93e6
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:21:08 2014 -0500
+
+    staging all files
+
 commit 893491189d50f78eebcd1d65352f44aac461a3ce
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:20:47 2014 -0500
@@ -132,12 +136,6 @@ Date:   Fri Jan 10 11:20:47 2014 -0500
 commit 3e909689ad362fc1bc7df7f1cae79aa804a49c9d
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:20:40 2014 -0500
-
-    staging all files
-
-commit d1b7de3e63405d3f8efb21f68fcd7bf2a8457bf0
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:20:13 2014 -0500
 
     staging all files
 ```
