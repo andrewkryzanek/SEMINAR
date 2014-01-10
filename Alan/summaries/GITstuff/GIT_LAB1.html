@@ -183,6 +183,11 @@ hljs.initHighlightingOnLoad();
 
 <h3>Alan T. Arnholt</h3>
 
+<p>Last compiled:</p>
+
+<pre><code>[1] &quot;Friday, January 10, 2014 - 10:27:02.&quot;
+</code></pre>
+
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
 
 <p>If you have never used git before, you need to do some setup first.  Run the following commands so that git knows your name and email.  The third line adds pretty command line colors. </p>
@@ -198,7 +203,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 3 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 4 commits.
 #
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -217,8 +222,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 2b8c81d] staging all files
- 3 files changed, 28 insertions(+), 28 deletions(-)
+<pre><code>[master 8fd85f7] staging all files
+ 3 files changed, 30 insertions(+), 25 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -227,7 +232,7 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 4 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 5 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -243,7 +248,7 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 4 commits.
+# Your branch is ahead of &#39;origin/master&#39; by 5 commits.
 #
 nothing to commit (working directory clean)
 </code></pre>
@@ -253,7 +258,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 2b8c81d787ff5271fb5ea59f605a7c238c035d51
+<pre><code>commit 8fd85f7fbc71094b46418fce8997a5a9b649367e
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Fri Jan 10 10:27:03 2014 -0500
+
+    staging all files
+
+commit 2b8c81d787ff5271fb5ea59f605a7c238c035d51
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 09:53:28 2014 -0500
 
@@ -262,12 +273,6 @@ Date:   Fri Jan 10 09:53:28 2014 -0500
 commit 5d5333c1f042ffa983f8f062336c8d542a0f0b09
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 09:53:10 2014 -0500
-
-    staging all files
-
-commit 2c68b5aa4b4f7b3b060abab28a81c9952c7a3038
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 09:52:42 2014 -0500
 
     staging all files
 </code></pre>

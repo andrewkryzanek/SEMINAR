@@ -6,15 +6,21 @@ Last compiled:
 format(Sys.time(), "%A, %B %d, %Y - %X.")
 ```
 
-
-
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
+
+
 
 ```{r label = SETUP, echo = FALSE}
 opts_chunk$set(comment = NA, engine = "bash", fig.align="center", fig.height = 4, fig.width = 4, dev ="pdf")
 ```
 
-If you have never used git before, you need to do some setup first.  Run the following commands so that git knows your name and email.  The third line adds pretty command line colors. 
+If you have never used git before, you need to do some setup first.  Run the following
+commands so that git knows your name and email.  The third line adds pretty command 
+line colors.  The commands are all issued in the Terminal (MAC) or at the command prompt
+(Windows).  The Terminal application is usually found in `/applications/Utilities`.
+To open a command prompt click on the windows icon, All Programs, Accessories, and then Command Prompt.
+
+
 
 ```{r label = GITsetup, eval = FALSE}
 git config --global user.name "Your Name"
