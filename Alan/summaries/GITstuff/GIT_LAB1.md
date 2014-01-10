@@ -1,4 +1,4 @@
-## Trying to ``git'' a Clue
+## Notes on GIT
 ### Alan T. Arnholt
 
 
@@ -26,7 +26,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
+# Your branch is ahead of 'origin/master' by 2 commits.
 #
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
@@ -48,8 +48,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 2c68b5a] staging all files
- 3 files changed, 29 insertions(+), 23 deletions(-)
+[master 5d5333c] staging all files
+ 3 files changed, 33 insertions(+), 25 deletions(-)
 ```
 
 
@@ -61,7 +61,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 2 commits.
+# Your branch is ahead of 'origin/master' by 3 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -80,7 +80,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 2 commits.
+# Your branch is ahead of 'origin/master' by 3 commits.
 #
 nothing to commit (working directory clean)
 ```
@@ -92,6 +92,12 @@ git log  -3
 ```
 
 ```
+commit 5d5333c1f042ffa983f8f062336c8d542a0f0b09
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 09:53:10 2014 -0500
+
+    staging all files
+
 commit 2c68b5aa4b4f7b3b060abab28a81c9952c7a3038
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 09:52:42 2014 -0500
@@ -103,12 +109,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 09:52:29 2014 -0500
 
     staging all files
-
-commit 5dba12a7b2caeb0741decfb95f2d9defa7d621e2
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 17:00:17 2014 -0500
-
-    update
 ```
 
 
