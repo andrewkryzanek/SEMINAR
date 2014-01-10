@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ## GIT - Notes
 ### Alan T. Arnholt
+=======
+## Trying to ``git'' a Clue
+>>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
 
 Last compiled:
 ```{r Systime, echo = FALSE, comment = NA}
@@ -11,7 +15,7 @@ Download and install the lastest version of [Git.](http://git-scm.com/downloads)
 
 
 ```{r label = SETUP, echo = FALSE}
-opts_chunk$set(comment = NA, engine = "bash", fig.align="center", fig.height = 4, fig.width = 4, dev ="pdf")
+opts_chunk$set(comment = NA, engine = "bash", fig.align="center", fig.height = 4, fig.width = 4, dev ="png")
 ```
 
 If you have never used git before, you need to do some setup first.  Run the following
@@ -77,7 +81,7 @@ git log  -3
 
 Now, just to show how cool this is, we will mix in a little `R`.
 
-```{r engine = 'R'}
+```{r label= Rgraph, engine = 'R'}
 library(ggplot2)
 ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
 ```
