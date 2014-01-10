@@ -1,15 +1,15 @@
 <<<<<<< HEAD
 ## GIT - Notes
 ### Alan T. Arnholt
+=======
+## Trying to ``git'' a Clue
+>>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
 
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:11:11."
+[1] "Friday, January 10, 2014 - 11:19:15."
 ```
-=======
-## Trying to ``git'' a Clue
->>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
 
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
@@ -59,17 +59,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 11 commits.
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   GIT_LAB1.Rmd
-#	modified:   GIT_LAB1.html
-#	modified:   GIT_LAB1.md
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit (working directory clean)
 ```
 
 The `git status` shows us what files are not staged for a commit.  Before files cna be
@@ -84,13 +74,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-<<<<<<< HEAD
-[master ce932f4] staging all files
- 3 files changed, 50 insertions(+), 33 deletions(-)
-=======
-[master 17bcee6] staging all files
- 2 files changed, 39 insertions(+), 19 deletions(-)
->>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
+# On branch master
+nothing to commit (working directory clean)
 ```
 
 
@@ -102,14 +87,7 @@ git status
 
 ```
 # On branch master
-<<<<<<< HEAD
-# Your branch is ahead of 'origin/master' by 12 commits.
-=======
-# Your branch is ahead of 'origin/master' by 1 commit.
-#   (use "git push" to publish your local commits)
->>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
-#
-nothing to commit, working directory clean
+nothing to commit (working directory clean)
 ```
 
 Push changes to the remote repository. 
@@ -126,13 +104,7 @@ git status
 
 ```
 # On branch master
-<<<<<<< HEAD
-# Your branch is ahead of 'origin/master' by 12 commits.
-#
 nothing to commit (working directory clean)
-=======
-nothing to commit, working directory clean
->>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
 ```
 
 Show the last three commits with
@@ -142,42 +114,24 @@ git log  -3
 ```
 
 ```
-<<<<<<< HEAD
+commit c81e3cab3f234e57878e1b0ce3104ec07da63535
+Merge: fb4ebcc bddd5f6
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:18:43 2014 -0500
+
+    new files
+
+commit fb4ebcc32bf623795d6ff95a81443124b7c154ee
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 11:12:02 2014 -0500
+
+    add two files
+
 commit ce932f43b1e5bf50bdf36244b4812a77b764851d
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:11:11 2014 -0500
 
     staging all files
-
-commit 5c1de980befd3b4970fe3e0b5dee812386ea3087
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:05:24 2014 -0500
-
-    staging all files
-
-commit 94d1a8adb6fd762fa36506e9f2f0d2afa5f1003c
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 10:55:19 2014 -0500
-=======
-commit 17bcee6f38c128640e76833c0abc094cb5ad1174
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:47:19 2014 -0500
-
-    staging all files
-
-commit 6676bb35624353fe0fa05e0a0b444fce13f8c03a
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:44:31 2014 -0500
-
-    staging all files
-
-commit 5dfd2d299768c21cfc2f866ded544cbc2777c2e9
-Merge: 3b36608 8f3e438
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:20:40 2014 -0500
->>>>>>> bddd5f6c204aa8376e00cf2a8ebe12f437c303de
-
-    Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
 ```
 
 
