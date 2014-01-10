@@ -43,8 +43,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 6676bb3] staging all files
- 2 files changed, 26 insertions(+), 54 deletions(-)
+[master 17bcee6] staging all files
+ 2 files changed, 39 insertions(+), 19 deletions(-)
 ```
 
 
@@ -86,6 +86,12 @@ git log  -3
 ```
 
 ```
+commit 17bcee6f38c128640e76833c0abc094cb5ad1174
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Thu Jan 9 19:47:19 2014 -0500
+
+    staging all files
+
 commit 6676bb35624353fe0fa05e0a0b444fce13f8c03a
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 19:44:31 2014 -0500
@@ -98,12 +104,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Thu Jan 9 19:20:40 2014 -0500
 
     Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
-
-commit 3b366081b36b638311ea0552809e8af38a15a4d7
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Thu Jan 9 19:20:18 2014 -0500
-
-    remove unnamed .png file
 ```
 
 
