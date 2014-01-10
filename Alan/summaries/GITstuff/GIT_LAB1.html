@@ -196,14 +196,7 @@ git config --global color.ui true
 </code></pre>
 
 <pre><code># On branch master
-# Changes not staged for commit:
-#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-#
-#   modified:   GIT_LAB1.md
-#   modified:   RmakeFile.R
-#
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Next all files are added to the staging area and a snapshot is taken of the commit with the message &quot;staging all files&rdquo;.</p>
@@ -212,8 +205,8 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 5f77aaa] staging all files
- 2 files changed, 8 insertions(+), 8 deletions(-)
+<pre><code># On branch master
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -222,9 +215,6 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
-#   (use &quot;git push&quot; to publish your local commits)
-#
 nothing to commit, working directory clean
 </code></pre>
 
@@ -247,7 +237,13 @@ nothing to commit, working directory clean
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 5f77aaaf382d8a933095f9ce183c90632568d930
+<pre><code>commit f3486fdf83e6e347ad1c7e3885f878367b4cc50e
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Thu Jan 9 19:02:52 2014 -0500
+
+    add two files
+
+commit 5f77aaaf382d8a933095f9ce183c90632568d930
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 19:01:41 2014 -0500
 
@@ -256,12 +252,6 @@ Date:   Thu Jan 9 19:01:41 2014 -0500
 commit 4f2d97fc43061b7ca489a9fee45f0f270470a276
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Thu Jan 9 18:56:26 2014 -0500
-
-    staging all files
-
-commit 326ed82acbeea963555c8ee7df1ee4465a666bf2
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Thu Jan 9 18:56:05 2014 -0500
 
     staging all files
 </code></pre>
