@@ -76,6 +76,12 @@ Show the last three commits with
 git log  -3
 ```
 
+That was ugly. Let us try some formatting.
+
+```{r label = LOGP}
+git log --pretty=oneline -3
+```
+
 Now, just to show how cool this is, we will mix in a little `R`.
 
 ```{r label= Rgraph, engine = 'R'}
