@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Friday, January 10, 2014 - 11:34:02."
+[1] "Monday, January 13, 2014 - 09:52:20."
 ```
 
 
@@ -45,7 +45,13 @@ type a username in the `Pick a username` box (please use `firstlast`, for exampl
 In order to push your local work to a remote repository, you will first need to create
 the remote repository. Log into your GitHub account, click the `New repository` button,
 then give your repository a name and optionally a description.  When you finish, click 
-the `Create repository` button and your GitHub repository will be created.  This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
+the `Create repository` button and your GitHub repository will be created.  
+![AlansGitRepo](./images/CreateGitRepo.png)
+
+
+This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
+
+## Initializing a Repository
 
 
 To check the current status of your repository type:
@@ -60,9 +66,12 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   GIT_LAB1.html
-#	modified:   GIT_LAB1.md
+#	modified:   GIT_LAB1.Rmd
 #
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	images/
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -78,8 +87,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 5bf1abb] staging all files
- 2 files changed, 78 insertions(+), 26 deletions(-)
+[master a51eefb] staging all files
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 Alan/summaries/GITstuff/images/CreateGitRepo.png
 ```
 
 
@@ -120,21 +130,21 @@ git log  -3
 ```
 
 ```
+commit a51eefb6a5eba7b312d0a2026093d5869a61033b
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 09:52:20 2014 -0500
+
+    staging all files
+
+commit 023ce48e27fa0f05896cd7809324b944e8580016
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Fri Jan 10 12:07:24 2014 -0500
+
+    add two files
+
 commit 5bf1abbd6b25f570060e86977d72ccfff83c558e
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 11:34:02 2014 -0500
-
-    staging all files
-
-commit c25203f25c448f406070a1b9ed4f24ceff9f8e47
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:32:15 2014 -0500
-
-    staging all files
-
-commit b5593a448230d7841f1274bfc003d461dfd383de
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:29:44 2014 -0500
 
     staging all files
 ```
@@ -148,9 +158,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+a51eefb6a5eba7b312d0a2026093d5869a61033b staging all files
+023ce48e27fa0f05896cd7809324b944e8580016 add two files
 5bf1abbd6b25f570060e86977d72ccfff83c558e staging all files
-c25203f25c448f406070a1b9ed4f24ceff9f8e47 staging all files
-b5593a448230d7841f1274bfc003d461dfd383de staging all files
 ```
 
 
@@ -162,9 +172,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
+023ce48 Fri Jan 10 12:07:24 2014 -0500- add two files [Alan Arnholt]
 5bf1abb Fri Jan 10 11:34:02 2014 -0500- staging all files [Alan Arnholt]
-c25203f Fri Jan 10 11:32:15 2014 -0500- staging all files [Alan Arnholt]
-b5593a4 Fri Jan 10 11:29:44 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -176,22 +186,20 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd             |   8 +++++++-
+ Alan/summaries/GITstuff/images/CreateGitRepo.png | Bin 0 -> 91309 bytes
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+023ce48 Fri Jan 10 12:07:24 2014 -0500- add two files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.html | 40 +++++++++++++++++------------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 34 ++++++++++++++---------------
+ 2 files changed, 35 insertions(+), 39 deletions(-)
+
 5bf1abb Fri Jan 10 11:34:02 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.html | 52 +++++++++++++++++++++++++----------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 52 +++++++++++++++++++++++++++--------
  2 files changed, 78 insertions(+), 26 deletions(-)
-
-c25203f Fri Jan 10 11:32:15 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  8 +++++++-
- Alan/summaries/GITstuff/GIT_LAB1.html | 32 +++++++++++++++++++++-----------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 34 ++++++++++++++++++++++++----------
- 3 files changed, 52 insertions(+), 22 deletions(-)
-
-b5593a4 Fri Jan 10 11:29:44 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  6 ++++++
- Alan/summaries/GITstuff/GIT_LAB1.html | 27 +++++++++++++++++++--------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 29 ++++++++++++++++++++++-------
- 3 files changed, 47 insertions(+), 15 deletions(-)
 ```
 
 
