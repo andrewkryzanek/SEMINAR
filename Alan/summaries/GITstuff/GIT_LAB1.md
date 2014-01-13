@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 10:18:45."
+[1] "Monday, January 13, 2014 - 12:59:25."
 ```
 
 
@@ -80,15 +80,11 @@ git status
 
 ```
 # On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
 #
-#	modified:   GIT_LAB1.Rmd
-#	modified:   GIT_LAB1.html
-#	modified:   GIT_LAB1.md
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+#	../../../.DS_Store
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 The `git status` shows us what files are not staged for a commit.  Before files cna be
@@ -103,8 +99,12 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 16ac4ac] staging all files
- 3 files changed, 60 insertions(+), 42 deletions(-)
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../../.DS_Store
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 
@@ -116,9 +116,11 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
 #
-nothing to commit (working directory clean)
+#	../../../.DS_Store
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 Push changes to the remote repository. 
@@ -135,7 +137,11 @@ git status
 
 ```
 # On branch master
-nothing to commit (working directory clean)
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../../.DS_Store
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 Show the last three commits with
@@ -145,6 +151,12 @@ git log  -3
 ```
 
 ```
+commit 757bb0448794e42f8b99f024fe20f473f70b39b3
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 10:20:21 2014 -0500
+
+    add more directions
+
 commit 16ac4ac8e65ccae2f73daf5f4878b10facee129c
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:18:45 2014 -0500
@@ -154,12 +166,6 @@ Date:   Mon Jan 13 10:18:45 2014 -0500
 commit 2b680fb5dc3efb5421327351b2702bf5d638ba3a
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:16:41 2014 -0500
-
-    staging all files
-
-commit c16f0d29e77fa6510ad505c8d07f7f0a39424a04
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 10:13:45 2014 -0500
 
     staging all files
 ```
@@ -173,9 +179,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+757bb0448794e42f8b99f024fe20f473f70b39b3 add more directions
 16ac4ac8e65ccae2f73daf5f4878b10facee129c staging all files
 2b680fb5dc3efb5421327351b2702bf5d638ba3a staging all files
-c16f0d29e77fa6510ad505c8d07f7f0a39424a04 staging all files
 ```
 
 
@@ -187,9 +193,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
 16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
 2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
-c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -201,6 +207,11 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.html | 48 +++++++++++++++--------------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 42 +++++++++++++-----------------
+ 2 files changed, 39 insertions(+), 51 deletions(-)
+
 16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 +-
  Alan/summaries/GITstuff/GIT_LAB1.html | 53 ++++++++++++++++++++---------------
@@ -213,12 +224,6 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
  Alan/summaries/GITstuff/GIT_LAB1.md                |  41 ++++++++--------
  .../GITstuff/images/ProjectVersionControl.png      | Bin 0 -> 44534 bytes
  4 files changed, 49 insertions(+), 51 deletions(-)
-
-c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 ++
- Alan/summaries/GITstuff/GIT_LAB1.html | 49 +++++++++++++++++++----------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 41 ++++++++++++++++-------------
- 3 files changed, 52 insertions(+), 40 deletions(-)
 ```
 
 

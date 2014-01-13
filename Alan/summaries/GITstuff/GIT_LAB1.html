@@ -185,7 +185,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Monday, January 13, 2014 - 10:18:45.&quot;
+<pre><code>[1] &quot;Monday, January 13, 2014 - 12:59:25.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -245,15 +245,11 @@ to click on File -&gt; New Project </p>
 </code></pre>
 
 <pre><code># On branch master
-# Changes not staged for commit:
-#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
 #
-#   modified:   GIT_LAB1.Rmd
-#   modified:   GIT_LAB1.html
-#   modified:   GIT_LAB1.md
-#
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+#   ../../../.DS_Store
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
 </code></pre>
 
 <p>The <code>git status</code> shows us what files are not staged for a commit.  Before files cna be
@@ -266,8 +262,12 @@ taken of the commit with the message &ldquo;staging all files&rdquo;.</p>
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 16ac4ac] staging all files
- 3 files changed, 60 insertions(+), 42 deletions(-)
+<pre><code># On branch master
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+#
+#   ../../../.DS_Store
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -276,9 +276,11 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
 #
-nothing to commit (working directory clean)
+#   ../../../.DS_Store
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
 </code></pre>
 
 <p>Push changes to the remote repository. </p>
@@ -292,7 +294,11 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-nothing to commit (working directory clean)
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+#
+#   ../../../.DS_Store
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
 </code></pre>
 
 <p>Show the last three commits with</p>
@@ -300,7 +306,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 16ac4ac8e65ccae2f73daf5f4878b10facee129c
+<pre><code>commit 757bb0448794e42f8b99f024fe20f473f70b39b3
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Mon Jan 13 10:20:21 2014 -0500
+
+    add more directions
+
+commit 16ac4ac8e65ccae2f73daf5f4878b10facee129c
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Mon Jan 13 10:18:45 2014 -0500
 
@@ -311,12 +323,6 @@ Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Mon Jan 13 10:16:41 2014 -0500
 
     staging all files
-
-commit c16f0d29e77fa6510ad505c8d07f7f0a39424a04
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Mon Jan 13 10:13:45 2014 -0500
-
-    staging all files
 </code></pre>
 
 <p>That was ugly. Let us try some formatting.</p>
@@ -324,9 +330,9 @@ Date:   Mon Jan 13 10:13:45 2014 -0500
 <pre><code class="bash">git log --pretty=oneline -3
 </code></pre>
 
-<pre><code>16ac4ac8e65ccae2f73daf5f4878b10facee129c staging all files
+<pre><code>757bb0448794e42f8b99f024fe20f473f70b39b3 add more directions
+16ac4ac8e65ccae2f73daf5f4878b10facee129c staging all files
 2b680fb5dc3efb5421327351b2702bf5d638ba3a staging all files
-c16f0d29e77fa6510ad505c8d07f7f0a39424a04 staging all files
 </code></pre>
 
 <p>The previous output was to brief for my likes.  Let us try some further formatting.</p>
@@ -334,9 +340,9 @@ c16f0d29e77fa6510ad505c8d07f7f0a39424a04 staging all files
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3
 </code></pre>
 
-<pre><code>16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
+<pre><code>757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
+16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
 2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
-c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
 </code></pre>
 
 <p>Maybe even some statistics?</p>
@@ -344,7 +350,12 @@ c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3 --stat
 </code></pre>
 
-<pre><code>16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
+<pre><code>757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.html | 48 +++++++++++++++--------------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 42 +++++++++++++-----------------
+ 2 files changed, 39 insertions(+), 51 deletions(-)
+
+16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 +-
  Alan/summaries/GITstuff/GIT_LAB1.html | 53 ++++++++++++++++++++---------------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 47 ++++++++++++++++++-------------
@@ -356,12 +367,6 @@ c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.md                |  41 ++++++++--------
  .../GITstuff/images/ProjectVersionControl.png      | Bin 0 -&gt; 44534 bytes
  4 files changed, 49 insertions(+), 51 deletions(-)
-
-c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 ++
- Alan/summaries/GITstuff/GIT_LAB1.html | 49 +++++++++++++++++++----------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 41 ++++++++++++++++-------------
- 3 files changed, 52 insertions(+), 40 deletions(-)
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
