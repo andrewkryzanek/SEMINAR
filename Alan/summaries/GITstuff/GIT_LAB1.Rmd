@@ -60,9 +60,13 @@ to click on File -> New Project
 
 ![NewProject](./images/NewProject.png)
 
-Click Version Control and a new window such as the one below will appear where you will select t
+Click Version Control and a new window such as the one below will appear where you will select Git.
 
 ![VersionControl](./images/VersionControl.png)
+
+In the next window that will appear, shown below
+
+![ProjectVersionControl](./images/ProjectVersionControl.png)
 
 
 To check the current status of your repository type:
