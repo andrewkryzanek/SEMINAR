@@ -58,6 +58,9 @@ directory to track your files.  If you clone a remote repository to your machine
 will not need to initialize your directory.  One way to clone this repo using `RStudio` is 
 to click on File -> New Project 
 ![NewProject](./images/NewProject.png)
+Click Version Control and a new window such as the one below will appear where you will select t
+
+![VersionControl](./images/VersionControl.png)
 
 
 To check the current status of your repository type:

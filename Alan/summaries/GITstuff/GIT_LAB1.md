@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 10:00:09."
+[1] "Monday, January 13, 2014 - 10:09:54."
 ```
 
 
@@ -53,7 +53,14 @@ This document is stored in the repository [https://github.com/alanarnholt/SEMINA
 
 ## Local Repositories
 
-It is possible to set up a local repository using GUI (drop, drag, etc.) commands or to use the command line.  I keep my repositories in a folder called *git_repositories* that is a subfolder of my *USERNAME* directory.
+It is possible to set up a local repository using GUI (drop, drag, etc.) commands or to
+use the command line.  I keep my repositories in a folder called *git_repositories* that
+is a subfolder of my *USERNAME* directory.  Once you have a local folder with files you
+would like to place under version control, use the `git init` command from your working
+directory to track your files.  If you clone a remote repository to your machine, you 
+will not need to initialize your directory.  One way to clone this repo using `RStudio` is 
+to click on File -> New Project 
+![NewProject](./images/NewProject.png)
 
 
 To check the current status of your repository type:
@@ -72,6 +79,10 @@ git status
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	images/NewProject.png
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -87,8 +98,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 2ba8e67] staging all files
- 3 files changed, 79 insertions(+), 62 deletions(-)
+[master d5b97d3] staging all files
+ 4 files changed, 56 insertions(+), 49 deletions(-)
+ create mode 100644 Alan/summaries/GITstuff/images/NewProject.png
 ```
 
 
@@ -129,6 +141,12 @@ git log  -3
 ```
 
 ```
+commit d5b97d304e040b429c4d1757ea159cad44cd2913
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 10:09:54 2014 -0500
+
+    staging all files
+
 commit 2ba8e67ca6699f775a5df699625ddedb310c0c60
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:00:09 2014 -0500
@@ -140,12 +158,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 09:52:20 2014 -0500
 
     staging all files
-
-commit 023ce48e27fa0f05896cd7809324b944e8580016
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 12:07:24 2014 -0500
-
-    add two files
 ```
 
 
@@ -157,9 +169,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+d5b97d304e040b429c4d1757ea159cad44cd2913 staging all files
 2ba8e67ca6699f775a5df699625ddedb310c0c60 staging all files
 a51eefb6a5eba7b312d0a2026093d5869a61033b staging all files
-023ce48e27fa0f05896cd7809324b944e8580016 add two files
 ```
 
 
@@ -171,9 +183,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+d5b97d3 Mon Jan 13 10:09:54 2014 -0500- staging all files [Alan Arnholt]
 2ba8e67 Mon Jan 13 10:00:09 2014 -0500- staging all files [Alan Arnholt]
 a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
-023ce48 Fri Jan 10 12:07:24 2014 -0500- add two files [Alan Arnholt]
 ```
 
 
@@ -185,6 +197,13 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+d5b97d3 Mon Jan 13 10:09:54 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd          |   9 ++++-
+ Alan/summaries/GITstuff/GIT_LAB1.html         |  52 +++++++++++++-------------
+ Alan/summaries/GITstuff/GIT_LAB1.md           |  44 +++++++++++-----------
+ Alan/summaries/GITstuff/images/NewProject.png | Bin 0 -> 51988 bytes
+ 4 files changed, 56 insertions(+), 49 deletions(-)
+
 2ba8e67 Mon Jan 13 10:00:09 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  4 +-
  Alan/summaries/GITstuff/GIT_LAB1.html | 71 +++++++++++++++++++----------------
@@ -195,11 +214,6 @@ a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd             |   8 +++++++-
  Alan/summaries/GITstuff/images/CreateGitRepo.png | Bin 0 -> 91309 bytes
  2 files changed, 7 insertions(+), 1 deletion(-)
-
-023ce48 Fri Jan 10 12:07:24 2014 -0500- add two files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.html | 40 +++++++++++++++++------------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 34 ++++++++++++++---------------
- 2 files changed, 35 insertions(+), 39 deletions(-)
 ```
 
 
