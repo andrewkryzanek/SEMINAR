@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 10:16:41."
+[1] "Monday, January 13, 2014 - 10:18:45."
 ```
 
 
@@ -67,7 +67,7 @@ Click Version Control and a new window such as the one below will appear where y
 
 ![VersionControl](./images/VersionControl.png)
 
-In the next window that will appear, shown below
+In the next window that will appear, shown below you will need to enter the URL for the repository you are cloning.  Enter a project name and specify where you want the project to reside on your computer.  When you are finished, click the Create Project button and you will have cloned a remote repository.
 
 ![ProjectVersionControl](./images/ProjectVersionControl.png)
 
@@ -88,10 +88,6 @@ git status
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	images/ProjectVersionControl.png
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -107,9 +103,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 2b680fb] staging all files
- 4 files changed, 49 insertions(+), 51 deletions(-)
- create mode 100644 Alan/summaries/GITstuff/images/ProjectVersionControl.png
+[master 16ac4ac] staging all files
+ 3 files changed, 60 insertions(+), 42 deletions(-)
 ```
 
 
@@ -150,6 +145,12 @@ git log  -3
 ```
 
 ```
+commit 16ac4ac8e65ccae2f73daf5f4878b10facee129c
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 10:18:45 2014 -0500
+
+    staging all files
+
 commit 2b680fb5dc3efb5421327351b2702bf5d638ba3a
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:16:41 2014 -0500
@@ -159,12 +160,6 @@ Date:   Mon Jan 13 10:16:41 2014 -0500
 commit c16f0d29e77fa6510ad505c8d07f7f0a39424a04
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:13:45 2014 -0500
-
-    staging all files
-
-commit 7370780951cb104ad254a7a5ff9e3a20ea68c4c5
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 10:13:25 2014 -0500
 
     staging all files
 ```
@@ -178,9 +173,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+16ac4ac8e65ccae2f73daf5f4878b10facee129c staging all files
 2b680fb5dc3efb5421327351b2702bf5d638ba3a staging all files
 c16f0d29e77fa6510ad505c8d07f7f0a39424a04 staging all files
-7370780951cb104ad254a7a5ff9e3a20ea68c4c5 staging all files
 ```
 
 
@@ -192,9 +187,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
 2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
 c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
-7370780 Mon Jan 13 10:13:25 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -206,6 +201,12 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 +-
+ Alan/summaries/GITstuff/GIT_LAB1.html | 53 ++++++++++++++++++++---------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 47 ++++++++++++++++++-------------
+ 3 files changed, 60 insertions(+), 42 deletions(-)
+
 2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd               |   6 ++-
  Alan/summaries/GITstuff/GIT_LAB1.html              |  53 ++++++++++-----------
@@ -218,13 +219,6 @@ c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.html | 49 +++++++++++++++++++----------------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 41 ++++++++++++++++-------------
  3 files changed, 52 insertions(+), 40 deletions(-)
-
-7370780 Mon Jan 13 10:13:25 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd              |   3 ++
- Alan/summaries/GITstuff/GIT_LAB1.html             |  56 ++++++++++++++--------
- Alan/summaries/GITstuff/GIT_LAB1.md               |  48 ++++++++++++-------
- Alan/summaries/GITstuff/images/VersionControl.png | Bin 0 -> 34971 bytes
- 4 files changed, 69 insertions(+), 38 deletions(-)
 ```
 
 
