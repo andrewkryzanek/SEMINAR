@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 10:09:54."
+[1] "Monday, January 13, 2014 - 10:13:25."
 ```
 
 
@@ -61,6 +61,9 @@ directory to track your files.  If you clone a remote repository to your machine
 will not need to initialize your directory.  One way to clone this repo using `RStudio` is 
 to click on File -> New Project 
 ![NewProject](./images/NewProject.png)
+Click Version Control and a new window such as the one below will appear where you will select t
+
+![VersionControl](./images/VersionControl.png)
 
 
 To check the current status of your repository type:
@@ -82,7 +85,7 @@ git status
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
 #
-#	images/NewProject.png
+#	images/VersionControl.png
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -98,9 +101,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master d5b97d3] staging all files
- 4 files changed, 56 insertions(+), 49 deletions(-)
- create mode 100644 Alan/summaries/GITstuff/images/NewProject.png
+[master 7370780] staging all files
+ 4 files changed, 69 insertions(+), 38 deletions(-)
+ create mode 100644 Alan/summaries/GITstuff/images/VersionControl.png
 ```
 
 
@@ -141,6 +144,12 @@ git log  -3
 ```
 
 ```
+commit 7370780951cb104ad254a7a5ff9e3a20ea68c4c5
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 10:13:25 2014 -0500
+
+    staging all files
+
 commit d5b97d304e040b429c4d1757ea159cad44cd2913
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:09:54 2014 -0500
@@ -150,12 +159,6 @@ Date:   Mon Jan 13 10:09:54 2014 -0500
 commit 2ba8e67ca6699f775a5df699625ddedb310c0c60
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:00:09 2014 -0500
-
-    staging all files
-
-commit a51eefb6a5eba7b312d0a2026093d5869a61033b
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 09:52:20 2014 -0500
 
     staging all files
 ```
@@ -169,9 +172,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+7370780951cb104ad254a7a5ff9e3a20ea68c4c5 staging all files
 d5b97d304e040b429c4d1757ea159cad44cd2913 staging all files
 2ba8e67ca6699f775a5df699625ddedb310c0c60 staging all files
-a51eefb6a5eba7b312d0a2026093d5869a61033b staging all files
 ```
 
 
@@ -183,9 +186,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+7370780 Mon Jan 13 10:13:25 2014 -0500- staging all files [Alan Arnholt]
 d5b97d3 Mon Jan 13 10:09:54 2014 -0500- staging all files [Alan Arnholt]
 2ba8e67 Mon Jan 13 10:00:09 2014 -0500- staging all files [Alan Arnholt]
-a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -197,6 +200,13 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+7370780 Mon Jan 13 10:13:25 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd              |   3 ++
+ Alan/summaries/GITstuff/GIT_LAB1.html             |  56 ++++++++++++++--------
+ Alan/summaries/GITstuff/GIT_LAB1.md               |  48 ++++++++++++-------
+ Alan/summaries/GITstuff/images/VersionControl.png | Bin 0 -> 34971 bytes
+ 4 files changed, 69 insertions(+), 38 deletions(-)
+
 d5b97d3 Mon Jan 13 10:09:54 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd          |   9 ++++-
  Alan/summaries/GITstuff/GIT_LAB1.html         |  52 +++++++++++++-------------
@@ -209,11 +219,6 @@ d5b97d3 Mon Jan 13 10:09:54 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.html | 71 +++++++++++++++++++----------------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 66 ++++++++++++++++++--------------
  3 files changed, 79 insertions(+), 62 deletions(-)
-
-a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd             |   8 +++++++-
- Alan/summaries/GITstuff/images/CreateGitRepo.png | Bin 0 -> 91309 bytes
- 2 files changed, 7 insertions(+), 1 deletion(-)
 ```
 
 
