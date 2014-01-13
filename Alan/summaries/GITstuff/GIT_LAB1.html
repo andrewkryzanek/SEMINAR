@@ -185,7 +185,7 @@ hljs.initHighlightingOnLoad();
 
 <p>Last compiled:</p>
 
-<pre><code>[1] &quot;Monday, January 13, 2014 - 09:52:20.&quot;
+<pre><code>[1] &quot;Monday, January 13, 2014 - 10:00:09.&quot;
 </code></pre>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
@@ -219,7 +219,9 @@ the <code>Create repository</code> button and your GitHub repository will be cre
 
 <p>This document is stored in the repository <a href="https://github.com/alanarnholt/SEMINAR">https://github.com/alanarnholt/SEMINAR</a> in the folder <a href="https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff">https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff</a>. </p>
 
-<h2>Initializing a Repository</h2>
+<h2>Local Repositories</h2>
+
+<p>It is possible to set up a local repository using GUI (drop, drag, etc.) commands or to use the command line.  I keep my repositories in a folder called <em>git_repositories</em> that is a subfolder of my <em>USERNAME</em> directory.</p>
 
 <p>To check the current status of your repository type:</p>
 
@@ -232,11 +234,9 @@ the <code>Create repository</code> button and your GitHub repository will be cre
 #   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
 #
 #   modified:   GIT_LAB1.Rmd
+#   modified:   GIT_LAB1.html
+#   modified:   GIT_LAB1.md
 #
-# Untracked files:
-#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-#
-#   images/
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre>
 
@@ -250,9 +250,8 @@ taken of the commit with the message &ldquo;staging all files&rdquo;.</p>
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master a51eefb] staging all files
- 2 files changed, 7 insertions(+), 1 deletion(-)
- create mode 100644 Alan/summaries/GITstuff/images/CreateGitRepo.png
+<pre><code>[master 2ba8e67] staging all files
+ 3 files changed, 79 insertions(+), 62 deletions(-)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -285,7 +284,13 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit a51eefb6a5eba7b312d0a2026093d5869a61033b
+<pre><code>commit 2ba8e67ca6699f775a5df699625ddedb310c0c60
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Mon Jan 13 10:00:09 2014 -0500
+
+    staging all files
+
+commit a51eefb6a5eba7b312d0a2026093d5869a61033b
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Mon Jan 13 09:52:20 2014 -0500
 
@@ -296,12 +301,6 @@ Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Fri Jan 10 12:07:24 2014 -0500
 
     add two files
-
-commit 5bf1abbd6b25f570060e86977d72ccfff83c558e
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Fri Jan 10 11:34:02 2014 -0500
-
-    staging all files
 </code></pre>
 
 <p>That was ugly. Let us try some formatting.</p>
@@ -309,9 +308,9 @@ Date:   Fri Jan 10 11:34:02 2014 -0500
 <pre><code class="bash">git log --pretty=oneline -3
 </code></pre>
 
-<pre><code>a51eefb6a5eba7b312d0a2026093d5869a61033b staging all files
+<pre><code>2ba8e67ca6699f775a5df699625ddedb310c0c60 staging all files
+a51eefb6a5eba7b312d0a2026093d5869a61033b staging all files
 023ce48e27fa0f05896cd7809324b944e8580016 add two files
-5bf1abbd6b25f570060e86977d72ccfff83c558e staging all files
 </code></pre>
 
 <p>The previous output was to brief for my likes.  Let us try some further formatting.</p>
@@ -319,9 +318,9 @@ Date:   Fri Jan 10 11:34:02 2014 -0500
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3
 </code></pre>
 
-<pre><code>a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
+<pre><code>2ba8e67 Mon Jan 13 10:00:09 2014 -0500- staging all files [Alan Arnholt]
+a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
 023ce48 Fri Jan 10 12:07:24 2014 -0500- add two files [Alan Arnholt]
-5bf1abb Fri Jan 10 11:34:02 2014 -0500- staging all files [Alan Arnholt]
 </code></pre>
 
 <p>Maybe even some statistics?</p>
@@ -329,7 +328,13 @@ Date:   Fri Jan 10 11:34:02 2014 -0500
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3 --stat
 </code></pre>
 
-<pre><code>a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
+<pre><code>2ba8e67 Mon Jan 13 10:00:09 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  4 +-
+ Alan/summaries/GITstuff/GIT_LAB1.html | 71 +++++++++++++++++++----------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 66 ++++++++++++++++++--------------
+ 3 files changed, 79 insertions(+), 62 deletions(-)
+
+a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd             |   8 +++++++-
  Alan/summaries/GITstuff/images/CreateGitRepo.png | Bin 0 -&gt; 91309 bytes
  2 files changed, 7 insertions(+), 1 deletion(-)
@@ -338,11 +343,6 @@ Date:   Fri Jan 10 11:34:02 2014 -0500
  Alan/summaries/GITstuff/GIT_LAB1.html | 40 +++++++++++++++++------------------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 34 ++++++++++++++---------------
  2 files changed, 35 insertions(+), 39 deletions(-)
-
-5bf1abb Fri Jan 10 11:34:02 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.html | 52 +++++++++++++++++++++++++----------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 52 +++++++++++++++++++++++++++--------
- 2 files changed, 78 insertions(+), 26 deletions(-)
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>

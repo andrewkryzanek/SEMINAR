@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 09:52:20."
+[1] "Monday, January 13, 2014 - 10:00:09."
 ```
 
 
@@ -51,7 +51,9 @@ the `Create repository` button and your GitHub repository will be created.
 
 This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
 
-## Initializing a Repository
+## Local Repositories
+
+It is possible to set up a local repository using GUI (drop, drag, etc.) commands or to use the command line.  I keep my repositories in a folder called *git_repositories* that is a subfolder of my *USERNAME* directory.
 
 
 To check the current status of your repository type:
@@ -67,11 +69,9 @@ git status
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
 #	modified:   GIT_LAB1.Rmd
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
 #
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	images/
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -87,9 +87,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master a51eefb] staging all files
- 2 files changed, 7 insertions(+), 1 deletion(-)
- create mode 100644 Alan/summaries/GITstuff/images/CreateGitRepo.png
+[master 2ba8e67] staging all files
+ 3 files changed, 79 insertions(+), 62 deletions(-)
 ```
 
 
@@ -130,6 +129,12 @@ git log  -3
 ```
 
 ```
+commit 2ba8e67ca6699f775a5df699625ddedb310c0c60
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 10:00:09 2014 -0500
+
+    staging all files
+
 commit a51eefb6a5eba7b312d0a2026093d5869a61033b
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 09:52:20 2014 -0500
@@ -141,12 +146,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Fri Jan 10 12:07:24 2014 -0500
 
     add two files
-
-commit 5bf1abbd6b25f570060e86977d72ccfff83c558e
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Fri Jan 10 11:34:02 2014 -0500
-
-    staging all files
 ```
 
 
@@ -158,9 +157,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+2ba8e67ca6699f775a5df699625ddedb310c0c60 staging all files
 a51eefb6a5eba7b312d0a2026093d5869a61033b staging all files
 023ce48e27fa0f05896cd7809324b944e8580016 add two files
-5bf1abbd6b25f570060e86977d72ccfff83c558e staging all files
 ```
 
 
@@ -172,9 +171,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+2ba8e67 Mon Jan 13 10:00:09 2014 -0500- staging all files [Alan Arnholt]
 a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
 023ce48 Fri Jan 10 12:07:24 2014 -0500- add two files [Alan Arnholt]
-5bf1abb Fri Jan 10 11:34:02 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -186,6 +185,12 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+2ba8e67 Mon Jan 13 10:00:09 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  4 +-
+ Alan/summaries/GITstuff/GIT_LAB1.html | 71 +++++++++++++++++++----------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 66 ++++++++++++++++++--------------
+ 3 files changed, 79 insertions(+), 62 deletions(-)
+
 a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd             |   8 +++++++-
  Alan/summaries/GITstuff/images/CreateGitRepo.png | Bin 0 -> 91309 bytes
@@ -195,11 +200,6 @@ a51eefb Mon Jan 13 09:52:20 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.html | 40 +++++++++++++++++------------------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 34 ++++++++++++++---------------
  2 files changed, 35 insertions(+), 39 deletions(-)
-
-5bf1abb Fri Jan 10 11:34:02 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.html | 52 +++++++++++++++++++++++++----------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 52 +++++++++++++++++++++++++++--------
- 2 files changed, 78 insertions(+), 26 deletions(-)
 ```
 
 

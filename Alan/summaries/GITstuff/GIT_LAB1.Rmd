@@ -50,7 +50,14 @@ This document is stored in the repository [https://github.com/alanarnholt/SEMINA
 
 ## Local Repositories
 
-It is possible to set up a local repository using GUI (drop, drag, etc.) commands or to use the command line.  I keep my repositories in a folder called *git_repositories* that is a subfolder of my *USERNAME* directory.
+It is possible to set up a local repository using GUI (drop, drag, etc.) commands or to
+use the command line.  I keep my repositories in a folder called *git_repositories* that
+is a subfolder of my *USERNAME* directory.  Once you have a local folder with files you
+would like to place under version control, use the `git init` command from your working
+directory to track your files.  If you clone a remote repository to your machine, you 
+will not need to initialize your directory.  One way to clone this repo using `RStudio` is 
+to click on File -> New Project 
+![NewProject](./images/NewProject.png)
 
 
 To check the current status of your repository type:
