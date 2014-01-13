@@ -42,7 +42,13 @@ type a username in the `Pick a username` box (please use `firstlast`, for exampl
 In order to push your local work to a remote repository, you will first need to create
 the remote repository. Log into your GitHub account, click the `New repository` button,
 then give your repository a name and optionally a description.  When you finish, click 
-the `Create repository` button and your GitHub repository will be created.  This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
+the `Create repository` button and your GitHub repository will be created.  
+![AlansGitRepo](./images/CreateGitRepo.png)
+
+
+This document is stored in the repository [https://github.com/alanarnholt/SEMINAR](https://github.com/alanarnholt/SEMINAR) in the folder [https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff](https://github.com/alanarnholt/SEMINAR/tree/master/Alan/summaries/GITstuff). 
+
+## Initializing a Repository
 
 
 To check the current status of your repository type:
