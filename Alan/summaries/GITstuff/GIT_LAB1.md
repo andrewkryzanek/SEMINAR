@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 10:13:44."
+[1] "Monday, January 13, 2014 - 10:16:41."
 ```
 
 
@@ -63,9 +63,13 @@ to click on File -> New Project
 
 ![NewProject](./images/NewProject.png)
 
-Click Version Control and a new window such as the one below will appear where you will select t
+Click Version Control and a new window such as the one below will appear where you will select Git.
 
 ![VersionControl](./images/VersionControl.png)
+
+In the next window that will appear, shown below
+
+![ProjectVersionControl](./images/ProjectVersionControl.png)
 
 
 To check the current status of your repository type:
@@ -84,6 +88,10 @@ git status
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	images/ProjectVersionControl.png
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -99,8 +107,9 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master c16f0d2] staging all files
- 3 files changed, 52 insertions(+), 40 deletions(-)
+[master 2b680fb] staging all files
+ 4 files changed, 49 insertions(+), 51 deletions(-)
+ create mode 100644 Alan/summaries/GITstuff/images/ProjectVersionControl.png
 ```
 
 
@@ -141,6 +150,12 @@ git log  -3
 ```
 
 ```
+commit 2b680fb5dc3efb5421327351b2702bf5d638ba3a
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 10:16:41 2014 -0500
+
+    staging all files
+
 commit c16f0d29e77fa6510ad505c8d07f7f0a39424a04
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:13:45 2014 -0500
@@ -150,12 +165,6 @@ Date:   Mon Jan 13 10:13:45 2014 -0500
 commit 7370780951cb104ad254a7a5ff9e3a20ea68c4c5
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:13:25 2014 -0500
-
-    staging all files
-
-commit d5b97d304e040b429c4d1757ea159cad44cd2913
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 10:09:54 2014 -0500
 
     staging all files
 ```
@@ -169,9 +178,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+2b680fb5dc3efb5421327351b2702bf5d638ba3a staging all files
 c16f0d29e77fa6510ad505c8d07f7f0a39424a04 staging all files
 7370780951cb104ad254a7a5ff9e3a20ea68c4c5 staging all files
-d5b97d304e040b429c4d1757ea159cad44cd2913 staging all files
 ```
 
 
@@ -183,9 +192,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
 c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
 7370780 Mon Jan 13 10:13:25 2014 -0500- staging all files [Alan Arnholt]
-d5b97d3 Mon Jan 13 10:09:54 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -197,6 +206,13 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd               |   6 ++-
+ Alan/summaries/GITstuff/GIT_LAB1.html              |  53 ++++++++++-----------
+ Alan/summaries/GITstuff/GIT_LAB1.md                |  41 ++++++++--------
+ .../GITstuff/images/ProjectVersionControl.png      | Bin 0 -> 44534 bytes
+ 4 files changed, 49 insertions(+), 51 deletions(-)
+
 c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 ++
  Alan/summaries/GITstuff/GIT_LAB1.html | 49 +++++++++++++++++++----------------
@@ -209,13 +225,6 @@ c16f0d2 Mon Jan 13 10:13:45 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.md               |  48 ++++++++++++-------
  Alan/summaries/GITstuff/images/VersionControl.png | Bin 0 -> 34971 bytes
  4 files changed, 69 insertions(+), 38 deletions(-)
-
-d5b97d3 Mon Jan 13 10:09:54 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd          |   9 ++++-
- Alan/summaries/GITstuff/GIT_LAB1.html         |  52 +++++++++++++-------------
- Alan/summaries/GITstuff/GIT_LAB1.md           |  44 +++++++++++-----------
- Alan/summaries/GITstuff/images/NewProject.png | Bin 0 -> 51988 bytes
- 4 files changed, 56 insertions(+), 49 deletions(-)
 ```
 
 
