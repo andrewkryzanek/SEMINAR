@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 12:59:25."
+[1] "Monday, January 13, 2014 - 13:00:44."
 ```
 
 
@@ -80,11 +80,18 @@ git status
 
 ```
 # On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
+#
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
 #
 #	../../../.DS_Store
-nothing added to commit but untracked files present (use "git add" to track)
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 The `git status` shows us what files are not staged for a commit.  Before files cna be
@@ -99,12 +106,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-# On branch master
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	../../../.DS_Store
-nothing added to commit but untracked files present (use "git add" to track)
+[master f48f765] staging all files
+ 2 files changed, 70 insertions(+), 60 deletions(-)
 ```
 
 
@@ -116,6 +119,9 @@ git status
 
 ```
 # On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
 #
@@ -151,6 +157,12 @@ git log  -3
 ```
 
 ```
+commit f48f765e7a63f7b0305d338f49fbaf017b7c70f9
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 13 13:00:44 2014 -0500
+
+    staging all files
+
 commit 757bb0448794e42f8b99f024fe20f473f70b39b3
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:20:21 2014 -0500
@@ -160,12 +172,6 @@ Date:   Mon Jan 13 10:20:21 2014 -0500
 commit 16ac4ac8e65ccae2f73daf5f4878b10facee129c
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 13 10:18:45 2014 -0500
-
-    staging all files
-
-commit 2b680fb5dc3efb5421327351b2702bf5d638ba3a
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 10:16:41 2014 -0500
 
     staging all files
 ```
@@ -179,9 +185,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+f48f765e7a63f7b0305d338f49fbaf017b7c70f9 staging all files
 757bb0448794e42f8b99f024fe20f473f70b39b3 add more directions
 16ac4ac8e65ccae2f73daf5f4878b10facee129c staging all files
-2b680fb5dc3efb5421327351b2702bf5d638ba3a staging all files
 ```
 
 
@@ -193,9 +199,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+f48f765 Mon Jan 13 13:00:44 2014 -0500- staging all files [Alan Arnholt]
 757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
 16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
-2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -207,6 +213,11 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+f48f765 Mon Jan 13 13:00:44 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.html | 69 +++++++++++++++++++----------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 61 +++++++++++++++++--------------
+ 2 files changed, 70 insertions(+), 60 deletions(-)
+
 757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.html | 48 +++++++++++++++--------------------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 42 +++++++++++++-----------------
@@ -217,13 +228,6 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
  Alan/summaries/GITstuff/GIT_LAB1.html | 53 ++++++++++++++++++++---------------
  Alan/summaries/GITstuff/GIT_LAB1.md   | 47 ++++++++++++++++++-------------
  3 files changed, 60 insertions(+), 42 deletions(-)
-
-2b680fb Mon Jan 13 10:16:41 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd               |   6 ++-
- Alan/summaries/GITstuff/GIT_LAB1.html              |  53 ++++++++++-----------
- Alan/summaries/GITstuff/GIT_LAB1.md                |  41 ++++++++--------
- .../GITstuff/images/ProjectVersionControl.png      | Bin 0 -> 44534 bytes
- 4 files changed, 49 insertions(+), 51 deletions(-)
 ```
 
 
