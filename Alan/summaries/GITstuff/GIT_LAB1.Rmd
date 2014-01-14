@@ -29,7 +29,7 @@ git config --global user.email "your_email@whatever.com"
 git config --global color.ui true
 ```
 
-If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.  See the article [Set Up Git](https://help.github.com/articles/set-up-git) for additional details on setting up the credential helper.
+If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.  See the article [Set Up Git](https://help.github.com/articles/set-up-git#platform-all) for additional details on setting up the credential helper.
 
 
 

@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Tuesday, January 14, 2014 - 13:31:10."
+[1] "Tuesday, January 14, 2014 - 13:38:19."
 ```
 
 
@@ -32,7 +32,9 @@ git config --global color.ui true
 ```
 
 
-If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.
+If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.  See the article [Set Up Git](https://help.github.com/articles/set-up-git) for additional details on setting up the credential helper.
+
+
 
 ### Creating a GitHub Account
 
@@ -101,8 +103,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master eab384d] staging all files
- 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 5754db2] staging all files
+ 1 file changed, 3 insertions(+), 1 deletion(-)
 ```
 
 
@@ -143,23 +145,23 @@ git log  -3
 ```
 
 ```
+commit 5754db276cb523d989df5c50f0596d5ffd9bf47f
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Tue Jan 14 13:38:19 2014 -0500
+
+    staging all files
+
+commit e9ea19f9a912eb90ebe48e39004959179bb61120
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Tue Jan 14 13:31:49 2014 -0500
+
+    fix typo
+
 commit eab384d91f357bbd9a358ef0009c940bc4fa30e5
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Tue Jan 14 13:31:10 2014 -0500
 
     staging all files
-
-commit 2d646580ab8d1ad80e59166d5e23454a70c6d011
-Author: Erin Kreiling <ekreiling1@Erins-MacBook-Pro.local>
-Date:   Mon Jan 13 16:55:33 2014 -0500
-
-    add name
-
-commit 2cd35bdfddfc18a47c8203d86cecab0f911738e2
-Author: Erin Kreiling <ekreiling1@Erins-MacBook-Pro.local>
-Date:   Mon Jan 13 16:53:24 2014 -0500
-
-    Added title/name and several more variables.
 ```
 
 
@@ -171,9 +173,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+5754db276cb523d989df5c50f0596d5ffd9bf47f staging all files
+e9ea19f9a912eb90ebe48e39004959179bb61120 fix typo
 eab384d91f357bbd9a358ef0009c940bc4fa30e5 staging all files
-2d646580ab8d1ad80e59166d5e23454a70c6d011 add name
-2cd35bdfddfc18a47c8203d86cecab0f911738e2 Added title/name and several more variables.
 ```
 
 
@@ -185,9 +187,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
+e9ea19f Tue Jan 14 13:31:49 2014 -0500- fix typo [Alan Arnholt]
 eab384d Tue Jan 14 13:31:10 2014 -0500- staging all files [Alan Arnholt]
-2d64658 Mon Jan 13 16:55:33 2014 -0500- add name [Erin Kreiling]
-2cd35bd Mon Jan 13 16:53:24 2014 -0500- Added title/name and several more variables. [Erin Kreiling]
 ```
 
 
@@ -199,20 +201,18 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+e9ea19f Tue Jan 14 13:31:49 2014 -0500- fix typo [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.html | 150 ++++++++++++++++++++--------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   |  85 ++++++++-----------
+ 2 files changed, 122 insertions(+), 113 deletions(-)
+
 eab384d Tue Jan 14 13:31:10 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
-
-2d64658 Mon Jan 13 16:55:33 2014 -0500- add name [Erin Kreiling]
- Erin/summaries/Chapter1.Rmd               |   1 +
- Erin/summaries/Chapter1.html              | 228 ++++++++++++++++++++++++++++++
- Erin/summaries/Chapter1.md                |  56 ++++++++
- Erin/summaries/figure/unnamed-chunk-2.png | Bin 0 -> 18372 bytes
- 4 files changed, 285 insertions(+)
-
-2cd35bd Mon Jan 13 16:53:24 2014 -0500- Added title/name and several more variables. [Erin Kreiling]
- Erin/summaries/Chapter1.Rmd | 6 +++++-
- 1 file changed, 5 insertions(+), 1 deletion(-)
 ```
 
 
