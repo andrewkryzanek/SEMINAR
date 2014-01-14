@@ -73,7 +73,7 @@ To check the current status of your repository type:
 ```{r label = STATUS}
 git status
 ```
-The `git status` shows us what files are not staged for a commit.  Before files cna be
+The `git status` shows us what files are not staged for a commit.  Before files can be
 committed, they must be added to the staging area.  Files are added to the stating area
 with the command `git add file_name`.  To add all files in the working directory, one
 can use `git add .`  Next all files are added to the staging area and a snapshot is 
