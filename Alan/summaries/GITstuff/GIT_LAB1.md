@@ -1,11 +1,11 @@
 
-## GIT - Notes
+## Git - Notes
 ### Alan T. Arnholt
 
 Last compiled:
 
 ```
-[1] "Tuesday, January 14, 2014 - 13:40:36."
+[1] "Tuesday, January 14, 2014 - 14:03:34."
 ```
 
 
@@ -69,7 +69,7 @@ Click Version Control and a new window such as the one below will appear where y
 
 ![VersionControl](./images/VersionControl.png)
 
-In the next window that will appear, shown below you will need to enter the URL for the repository you are cloning.  Enter a project name and specify where you want the project to reside on your computer.  When you are finished, click the Create Project button and you will have cloned a remote repository.
+In the next window that appears, which is shown below, enter the URL for the repository you are cloning.  Enter a project name and specify where you want the project to reside on your computer.  When you are finished, click the `Create Project` button and you will have cloned a remote repository.
 
 ![ProjectVersionControl](./images/ProjectVersionControl.png)
 
@@ -105,8 +105,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 917c406] staging all files
- 3 files changed, 60 insertions(+), 62 deletions(-)
+[master 77cec85] staging all files
+ 3 files changed, 47 insertions(+), 39 deletions(-)
 ```
 
 
@@ -147,6 +147,12 @@ git log  -3
 ```
 
 ```
+commit 77cec8512ada76be54e5f8e17ae4fe006a976de6
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Tue Jan 14 14:03:34 2014 -0500
+
+    staging all files
+
 commit 917c40697e790de3c176070590ebae5bf008249c
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Tue Jan 14 13:40:36 2014 -0500
@@ -158,12 +164,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Tue Jan 14 13:38:19 2014 -0500
 
     staging all files
-
-commit e9ea19f9a912eb90ebe48e39004959179bb61120
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Tue Jan 14 13:31:49 2014 -0500
-
-    fix typo
 ```
 
 
@@ -175,9 +175,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+77cec8512ada76be54e5f8e17ae4fe006a976de6 staging all files
 917c40697e790de3c176070590ebae5bf008249c staging all files
 5754db276cb523d989df5c50f0596d5ffd9bf47f staging all files
-e9ea19f9a912eb90ebe48e39004959179bb61120 fix typo
 ```
 
 
@@ -189,9 +189,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+77cec85 Tue Jan 14 14:03:34 2014 -0500- staging all files [Alan Arnholt]
 917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
 5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
-e9ea19f Tue Jan 14 13:31:49 2014 -0500- fix typo [Alan Arnholt]
 ```
 
 
@@ -203,6 +203,12 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+77cec85 Tue Jan 14 14:03:34 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  6 ++---
+ Alan/summaries/GITstuff/GIT_LAB1.html | 44 +++++++++++++++++++----------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 36 +++++++++++++++-------------
+ 3 files changed, 47 insertions(+), 39 deletions(-)
+
 917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 +-
  Alan/summaries/GITstuff/GIT_LAB1.html | 62 +++++++++++++++++------------------
@@ -212,11 +218,6 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd | 4 +++-
  1 file changed, 3 insertions(+), 1 deletion(-)
-
-e9ea19f Tue Jan 14 13:31:49 2014 -0500- fix typo [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.html | 150 ++++++++++++++++++++--------------
- Alan/summaries/GITstuff/GIT_LAB1.md   |  85 ++++++++-----------
- 2 files changed, 122 insertions(+), 113 deletions(-)
 ```
 
 
