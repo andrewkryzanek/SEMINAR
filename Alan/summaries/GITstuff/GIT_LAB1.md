@@ -5,7 +5,7 @@
 Last compiled:
 
 ```
-[1] "Tuesday, January 14, 2014 - 13:38:19."
+[1] "Tuesday, January 14, 2014 - 13:40:36."
 ```
 
 
@@ -32,7 +32,7 @@ git config --global color.ui true
 ```
 
 
-If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.  See the article [Set Up Git](https://help.github.com/articles/set-up-git) for additional details on setting up the credential helper.
+If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.  See the article [Set Up Git](https://help.github.com/articles/set-up-git#platform-all) for additional details on setting up the credential helper.
 
 
 
@@ -87,6 +87,8 @@ git status
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
 #	modified:   GIT_LAB1.Rmd
+#	modified:   GIT_LAB1.html
+#	modified:   GIT_LAB1.md
 #
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -103,8 +105,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master 5754db2] staging all files
- 1 file changed, 3 insertions(+), 1 deletion(-)
+[master 917c406] staging all files
+ 3 files changed, 60 insertions(+), 62 deletions(-)
 ```
 
 
@@ -145,6 +147,12 @@ git log  -3
 ```
 
 ```
+commit 917c40697e790de3c176070590ebae5bf008249c
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Tue Jan 14 13:40:36 2014 -0500
+
+    staging all files
+
 commit 5754db276cb523d989df5c50f0596d5ffd9bf47f
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Tue Jan 14 13:38:19 2014 -0500
@@ -156,12 +164,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Tue Jan 14 13:31:49 2014 -0500
 
     fix typo
-
-commit eab384d91f357bbd9a358ef0009c940bc4fa30e5
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Tue Jan 14 13:31:10 2014 -0500
-
-    staging all files
 ```
 
 
@@ -173,9 +175,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+917c40697e790de3c176070590ebae5bf008249c staging all files
 5754db276cb523d989df5c50f0596d5ffd9bf47f staging all files
 e9ea19f9a912eb90ebe48e39004959179bb61120 fix typo
-eab384d91f357bbd9a358ef0009c940bc4fa30e5 staging all files
 ```
 
 
@@ -187,9 +189,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
 5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
 e9ea19f Tue Jan 14 13:31:49 2014 -0500- fix typo [Alan Arnholt]
-eab384d Tue Jan 14 13:31:10 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -201,6 +203,12 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 +-
+ Alan/summaries/GITstuff/GIT_LAB1.html | 62 +++++++++++++++++------------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 58 ++++++++++++++++----------------
+ 3 files changed, 60 insertions(+), 62 deletions(-)
+
 5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd | 4 +++-
  1 file changed, 3 insertions(+), 1 deletion(-)
@@ -209,10 +217,6 @@ e9ea19f Tue Jan 14 13:31:49 2014 -0500- fix typo [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.html | 150 ++++++++++++++++++++--------------
  Alan/summaries/GITstuff/GIT_LAB1.md   |  85 ++++++++-----------
  2 files changed, 122 insertions(+), 113 deletions(-)
-
-eab384d Tue Jan 14 13:31:10 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
 

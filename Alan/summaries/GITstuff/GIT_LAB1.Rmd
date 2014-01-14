@@ -1,5 +1,5 @@
 
-## GIT - Notes
+## Git - Notes
 ### Alan T. Arnholt
 
 Last compiled:
@@ -66,7 +66,7 @@ Click Version Control and a new window such as the one below will appear where y
 
 ![VersionControl](./images/VersionControl.png)
 
-In the next window that will appear, shown below you will need to enter the URL for the repository you are cloning.  Enter a project name and specify where you want the project to reside on your computer.  When you are finished, click the Create Project button and you will have cloned a remote repository.
+In the next window that appears, which is shown below, enter the URL for the repository you are cloning.  Enter a project name and specify where you want the project to reside on your computer.  When you are finished, click the `Create Project` button and you will have cloned a remote repository.
 
 ![ProjectVersionControl](./images/ProjectVersionControl.png)
 
@@ -122,7 +122,7 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 
 Now, just to show how cool this is, we will mix in a little `R`.
 
-```{r label= Rgraph, engine = 'R'}
+```{r label = Rgraph, engine = 'R'}
 library(ggplot2)
 ggplot(data = CO2, aes(x = Type, y = uptake)) + geom_boxplot()
 ```
