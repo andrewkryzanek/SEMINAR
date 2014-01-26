@@ -1,0 +1,17 @@
+{
+    "contents" : "Chapter 2 Summary- Getting Started with Reproducible Research\n========================================================\n\n2.1 The Big Picture: A Workflow for Reproducible Research\n- 3 basic stages of a research project: data gathering, data analysis, results presentation\n- \n",
+    "created" : 1390775706402.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1514667104",
+    "id" : "14905ABC",
+    "lastKnownWriteTime" : 140243257571336,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
