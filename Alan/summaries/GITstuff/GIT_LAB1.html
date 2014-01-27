@@ -183,10 +183,7 @@ hljs.initHighlightingOnLoad();
 
 <h3>Alan T. Arnholt</h3>
 
-<p>Last compiled:</p>
-
-<pre><code>[1] &quot;Tuesday, January 14, 2014 - 14:03:34.&quot;
-</code></pre>
+<p>Last compiled Monday, January 27, 2014 - 06:43:32..</p>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
 
@@ -245,12 +242,15 @@ to click on File -&gt; New Project </p>
 </code></pre>
 
 <pre><code># On branch master
+# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
+#   (use &quot;git push&quot; to publish your local commits)
+#
 # Changes not staged for commit:
-#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
 #   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
 #
-#   modified:   GIT_LAB1.Rmd
-#   modified:   GIT_LAB1.html
+#   modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
+#   deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
 #   modified:   GIT_LAB1.md
 #
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
@@ -266,8 +266,8 @@ taken of the commit with the message &ldquo;staging all files&rdquo;.</p>
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master 77cec85] staging all files
- 3 files changed, 47 insertions(+), 39 deletions(-)
+<pre><code>[master c767548] staging all files
+ 1 file changed, 232 insertions(+)
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -276,9 +276,17 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
+# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
+#   (use &quot;git push&quot; to publish your local commits)
 #
-nothing to commit (working directory clean)
+# Changes not staged for commit:
+#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
+#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+#
+#   modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
+#   deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
+#
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre>
 
 <p>Push changes to the remote repository. </p>
@@ -292,7 +300,17 @@ nothing to commit (working directory clean)
 </code></pre>
 
 <pre><code># On branch master
-nothing to commit (working directory clean)
+# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
+#   (use &quot;git push&quot; to publish your local commits)
+#
+# Changes not staged for commit:
+#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
+#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+#
+#   modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
+#   deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
+#
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre>
 
 <p>Show the last three commits with</p>
@@ -300,23 +318,23 @@ nothing to commit (working directory clean)
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit 77cec8512ada76be54e5f8e17ae4fe006a976de6
+<pre><code>commit c767548f18cddfb58eacd39fc44c8fc7635c7bc2
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Tue Jan 14 14:03:34 2014 -0500
+Date:   Mon Jan 27 06:43:32 2014 -0500
 
     staging all files
 
-commit 917c40697e790de3c176070590ebae5bf008249c
+commit 9508c227d848b504e54d499194d2dff6c07826ae
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Tue Jan 14 13:40:36 2014 -0500
+Date:   Mon Jan 27 06:43:12 2014 -0500
 
     staging all files
 
-commit 5754db276cb523d989df5c50f0596d5ffd9bf47f
+commit e9e7dfb87cccf9ab549efaf3cee27bbff2493ab5
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Tue Jan 14 13:38:19 2014 -0500
+Date:   Mon Jan 27 06:40:44 2014 -0500
 
-    staging all files
+    misc changes
 </code></pre>
 
 <p>That was ugly. Let us try some formatting.</p>
@@ -324,9 +342,9 @@ Date:   Tue Jan 14 13:38:19 2014 -0500
 <pre><code class="bash">git log --pretty=oneline -3
 </code></pre>
 
-<pre><code>77cec8512ada76be54e5f8e17ae4fe006a976de6 staging all files
-917c40697e790de3c176070590ebae5bf008249c staging all files
-5754db276cb523d989df5c50f0596d5ffd9bf47f staging all files
+<pre><code>c767548f18cddfb58eacd39fc44c8fc7635c7bc2 staging all files
+9508c227d848b504e54d499194d2dff6c07826ae staging all files
+e9e7dfb87cccf9ab549efaf3cee27bbff2493ab5 misc changes
 </code></pre>
 
 <p>The previous output was to brief for my likes.  Let us try some further formatting.</p>
@@ -334,9 +352,9 @@ Date:   Tue Jan 14 13:38:19 2014 -0500
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3
 </code></pre>
 
-<pre><code>77cec85 Tue Jan 14 14:03:34 2014 -0500- staging all files [Alan Arnholt]
-917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
-5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
+<pre><code>c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
+9508c22 Mon Jan 27 06:43:12 2014 -0500- staging all files [Alan Arnholt]
+e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
 </code></pre>
 
 <p>Maybe even some statistics?</p>
@@ -344,21 +362,33 @@ Date:   Tue Jan 14 13:38:19 2014 -0500
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3 --stat
 </code></pre>
 
-<pre><code>77cec85 Tue Jan 14 14:03:34 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  6 ++---
- Alan/summaries/GITstuff/GIT_LAB1.html | 44 +++++++++++++++++++----------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 36 +++++++++++++++-------------
- 3 files changed, 47 insertions(+), 39 deletions(-)
+<pre><code>c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.md | 232 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 232 insertions(+)
 
-917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 +-
- Alan/summaries/GITstuff/GIT_LAB1.html | 62 +++++++++++++++++------------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 58 ++++++++++++++++----------------
- 3 files changed, 60 insertions(+), 62 deletions(-)
+9508c22 Mon Jan 27 06:43:12 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd |   6 +-
+ Alan/summaries/GITstuff/GIT_LAB1.md  | 202 -----------------------------------
+ 2 files changed, 4 insertions(+), 204 deletions(-)
 
-5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd | 4 +++-
- 1 file changed, 3 insertions(+), 1 deletion(-)
+e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
+ .DS_Store                                       | Bin 0 -&gt; 6148 bytes
+ .Rproj.user/D1DD7234/pcs/files-pane.pper        |   9 +++++++++
+ .Rproj.user/D1DD7234/pcs/source-pane.pper       |   3 +++
+ .Rproj.user/D1DD7234/pcs/windowlayoutstate.pper |  14 ++++++++++++++
+ .Rproj.user/D1DD7234/pcs/workbench-pane.pper    |   4 ++++
+ .Rproj.user/D1DD7234/sdb/prop/23527DEE          |   2 ++
+ .Rproj.user/D1DD7234/sdb/prop/32572516          |   2 ++
+ .Rproj.user/D1DD7234/sdb/prop/65B23338          |   2 ++
+ .Rproj.user/D1DD7234/sdb/prop/FCF6B578          |   2 ++
+ .Rproj.user/D1DD7234/sdb/prop/INDEX             |   4 ++++
+ .Rproj.user/D1DD7234/sdb/s-76E32973/11DE46BF    |  16 ++++++++++++++++
+ .Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65    |  16 ++++++++++++++++
+ .Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65    |  16 ++++++++++++++++
+ .Rproj.user/D1DD7234/sdb/s-76E32973/9E4283DE    |  16 ++++++++++++++++
+ .Rproj.user/D1DD7234/sdb/s-76E32973/lock_file   |   0
+ Alan/summaries/GITstuff/GIT_LAB1.pdf            | Bin 0 -&gt; 307054 bytes
+ 16 files changed, 106 insertions(+)
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
