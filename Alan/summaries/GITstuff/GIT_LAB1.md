@@ -6,7 +6,7 @@
 
 
 
-Last compiled Monday, January 27, 2014 - 06:43:32..
+Last compiled Monday, January 27, 2014 - 06:48:46..
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
 
@@ -81,18 +81,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#   (use "git push" to publish your local commits)
-#
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
-#	deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
-#	modified:   GIT_LAB1.md
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit, working directory clean
 ```
 
 The `git status` shows us what files are not staged for a commit.  Before files can be
@@ -107,8 +96,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master c767548] staging all files
- 1 file changed, 232 insertions(+)
+# On branch master
+nothing to commit, working directory clean
 ```
 
 
@@ -120,17 +109,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 2 commits.
-#   (use "git push" to publish your local commits)
-#
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
-#	deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit, working directory clean
 ```
 
 Push changes to the remote repository. 
@@ -147,17 +126,7 @@ git status
 
 ```
 # On branch master
-# Your branch is ahead of 'origin/master' by 2 commits.
-#   (use "git push" to publish your local commits)
-#
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
-#	deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
-#
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit, working directory clean
 ```
 
 Show the last three commits with
@@ -167,6 +136,12 @@ git log  -3
 ```
 
 ```
+commit cc637a3cbe52be7fbdcd51e35d423fa4a7aec8d4
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 27 06:48:25 2014 -0500
+
+    changed date format
+
 commit c767548f18cddfb58eacd39fc44c8fc7635c7bc2
 Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 27 06:43:32 2014 -0500
@@ -178,12 +153,6 @@ Author: Alan Arnholt <arnholtat@appstate.edu>
 Date:   Mon Jan 27 06:43:12 2014 -0500
 
     staging all files
-
-commit e9e7dfb87cccf9ab549efaf3cee27bbff2493ab5
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 27 06:40:44 2014 -0500
-
-    misc changes
 ```
 
 
@@ -195,9 +164,9 @@ git log --pretty=oneline -3
 ```
 
 ```
+cc637a3cbe52be7fbdcd51e35d423fa4a7aec8d4 changed date format
 c767548f18cddfb58eacd39fc44c8fc7635c7bc2 staging all files
 9508c227d848b504e54d499194d2dff6c07826ae staging all files
-e9e7dfb87cccf9ab549efaf3cee27bbff2493ab5 misc changes
 ```
 
 
@@ -209,9 +178,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
+cc637a3 Mon Jan 27 06:48:25 2014 -0500- changed date format [Alan Arnholt]
 c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
 9508c22 Mon Jan 27 06:43:12 2014 -0500- staging all files [Alan Arnholt]
-e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
 ```
 
 
@@ -223,6 +192,13 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
+cc637a3 Mon Jan 27 06:48:25 2014 -0500- changed date format [Alan Arnholt]
+ .Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65 |   6 +-
+ .Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65 |  16 ----
+ Alan/summaries/GITstuff/GIT_LAB1.html        | 110 +++++++++++++++++----------
+ Alan/summaries/GITstuff/GIT_LAB1.md          |  38 ++++-----
+ 4 files changed, 93 insertions(+), 77 deletions(-)
+
 c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.md | 232 ++++++++++++++++++++++++++++++++++++
  1 file changed, 232 insertions(+)
@@ -231,25 +207,6 @@ c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd |   6 +-
  Alan/summaries/GITstuff/GIT_LAB1.md  | 202 -----------------------------------
  2 files changed, 4 insertions(+), 204 deletions(-)
-
-e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
- .DS_Store                                       | Bin 0 -> 6148 bytes
- .Rproj.user/D1DD7234/pcs/files-pane.pper        |   9 +++++++++
- .Rproj.user/D1DD7234/pcs/source-pane.pper       |   3 +++
- .Rproj.user/D1DD7234/pcs/windowlayoutstate.pper |  14 ++++++++++++++
- .Rproj.user/D1DD7234/pcs/workbench-pane.pper    |   4 ++++
- .Rproj.user/D1DD7234/sdb/prop/23527DEE          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/32572516          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/65B23338          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/FCF6B578          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/INDEX             |   4 ++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/11DE46BF    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/9E4283DE    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/lock_file   |   0
- Alan/summaries/GITstuff/GIT_LAB1.pdf            | Bin 0 -> 307054 bytes
- 16 files changed, 106 insertions(+)
 ```
 
 

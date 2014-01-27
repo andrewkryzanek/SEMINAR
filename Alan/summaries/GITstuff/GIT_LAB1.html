@@ -183,7 +183,7 @@ hljs.initHighlightingOnLoad();
 
 <h3>Alan T. Arnholt</h3>
 
-<p>Last compiled Monday, January 27, 2014 - 06:43:32..</p>
+<p>Last compiled Monday, January 27, 2014 - 06:48:46..</p>
 
 <p>Download and install the lastest version of <a href="http://git-scm.com/downloads">Git.</a></p>
 
@@ -242,18 +242,7 @@ to click on File -&gt; New Project </p>
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 1 commit.
-#   (use &quot;git push&quot; to publish your local commits)
-#
-# Changes not staged for commit:
-#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-#
-#   modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
-#   deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
-#   modified:   GIT_LAB1.md
-#
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+nothing to commit, working directory clean
 </code></pre>
 
 <p>The <code>git status</code> shows us what files are not staged for a commit.  Before files can be
@@ -266,8 +255,8 @@ taken of the commit with the message &ldquo;staging all files&rdquo;.</p>
 git commit  -m &quot;staging all files&quot;
 </code></pre>
 
-<pre><code>[master c767548] staging all files
- 1 file changed, 232 insertions(+)
+<pre><code># On branch master
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Check the status after the last commit.</p>
@@ -276,17 +265,7 @@ git commit  -m &quot;staging all files&quot;
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
-#   (use &quot;git push&quot; to publish your local commits)
-#
-# Changes not staged for commit:
-#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-#
-#   modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
-#   deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
-#
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Push changes to the remote repository. </p>
@@ -300,17 +279,7 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 </code></pre>
 
 <pre><code># On branch master
-# Your branch is ahead of &#39;origin/master&#39; by 2 commits.
-#   (use &quot;git push&quot; to publish your local commits)
-#
-# Changes not staged for commit:
-#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
-#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-#
-#   modified:   ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65
-#   deleted:    ../../../.Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65
-#
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+nothing to commit, working directory clean
 </code></pre>
 
 <p>Show the last three commits with</p>
@@ -318,7 +287,13 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 <pre><code class="bash">git log  -3
 </code></pre>
 
-<pre><code>commit c767548f18cddfb58eacd39fc44c8fc7635c7bc2
+<pre><code>commit cc637a3cbe52be7fbdcd51e35d423fa4a7aec8d4
+Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
+Date:   Mon Jan 27 06:48:25 2014 -0500
+
+    changed date format
+
+commit c767548f18cddfb58eacd39fc44c8fc7635c7bc2
 Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Mon Jan 27 06:43:32 2014 -0500
 
@@ -329,12 +304,6 @@ Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
 Date:   Mon Jan 27 06:43:12 2014 -0500
 
     staging all files
-
-commit e9e7dfb87cccf9ab549efaf3cee27bbff2493ab5
-Author: Alan Arnholt &lt;arnholtat@appstate.edu&gt;
-Date:   Mon Jan 27 06:40:44 2014 -0500
-
-    misc changes
 </code></pre>
 
 <p>That was ugly. Let us try some formatting.</p>
@@ -342,9 +311,9 @@ Date:   Mon Jan 27 06:40:44 2014 -0500
 <pre><code class="bash">git log --pretty=oneline -3
 </code></pre>
 
-<pre><code>c767548f18cddfb58eacd39fc44c8fc7635c7bc2 staging all files
+<pre><code>cc637a3cbe52be7fbdcd51e35d423fa4a7aec8d4 changed date format
+c767548f18cddfb58eacd39fc44c8fc7635c7bc2 staging all files
 9508c227d848b504e54d499194d2dff6c07826ae staging all files
-e9e7dfb87cccf9ab549efaf3cee27bbff2493ab5 misc changes
 </code></pre>
 
 <p>The previous output was to brief for my likes.  Let us try some further formatting.</p>
@@ -352,9 +321,9 @@ e9e7dfb87cccf9ab549efaf3cee27bbff2493ab5 misc changes
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3
 </code></pre>
 
-<pre><code>c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
+<pre><code>cc637a3 Mon Jan 27 06:48:25 2014 -0500- changed date format [Alan Arnholt]
+c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
 9508c22 Mon Jan 27 06:43:12 2014 -0500- staging all files [Alan Arnholt]
-e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
 </code></pre>
 
 <p>Maybe even some statistics?</p>
@@ -362,7 +331,14 @@ e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
 <pre><code class="bash">git log --pretty=format:&quot;%h %ad- %s [%an]&quot; -3 --stat
 </code></pre>
 
-<pre><code>c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
+<pre><code>cc637a3 Mon Jan 27 06:48:25 2014 -0500- changed date format [Alan Arnholt]
+ .Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65 |   6 +-
+ .Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65 |  16 ----
+ Alan/summaries/GITstuff/GIT_LAB1.html        | 110 +++++++++++++++++----------
+ Alan/summaries/GITstuff/GIT_LAB1.md          |  38 ++++-----
+ 4 files changed, 93 insertions(+), 77 deletions(-)
+
+c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.md | 232 ++++++++++++++++++++++++++++++++++++
  1 file changed, 232 insertions(+)
 
@@ -370,25 +346,6 @@ e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd |   6 +-
  Alan/summaries/GITstuff/GIT_LAB1.md  | 202 -----------------------------------
  2 files changed, 4 insertions(+), 204 deletions(-)
-
-e9e7dfb Mon Jan 27 06:40:44 2014 -0500- misc changes [Alan Arnholt]
- .DS_Store                                       | Bin 0 -&gt; 6148 bytes
- .Rproj.user/D1DD7234/pcs/files-pane.pper        |   9 +++++++++
- .Rproj.user/D1DD7234/pcs/source-pane.pper       |   3 +++
- .Rproj.user/D1DD7234/pcs/windowlayoutstate.pper |  14 ++++++++++++++
- .Rproj.user/D1DD7234/pcs/workbench-pane.pper    |   4 ++++
- .Rproj.user/D1DD7234/sdb/prop/23527DEE          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/32572516          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/65B23338          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/FCF6B578          |   2 ++
- .Rproj.user/D1DD7234/sdb/prop/INDEX             |   4 ++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/11DE46BF    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/9E4283DE    |  16 ++++++++++++++++
- .Rproj.user/D1DD7234/sdb/s-76E32973/lock_file   |   0
- Alan/summaries/GITstuff/GIT_LAB1.pdf            | Bin 0 -&gt; 307054 bytes
- 16 files changed, 106 insertions(+)
 </code></pre>
 
 <p>Now, just to show how cool this is, we will mix in a little <code>R</code>.</p>
