@@ -1,11 +1,11 @@
 
-## GIT - Notes
+## Git - Notes
 ### Alan T. Arnholt
 
 Last compiled:
 
 ```
-[1] "Monday, January 13, 2014 - 13:00:44."
+[1] "Tuesday, January 14, 2014 - 14:03:34."
 ```
 
 
@@ -32,7 +32,9 @@ git config --global color.ui true
 ```
 
 
-If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.
+If you do not want to type your username and password every time you work with a remote server, you will to install the credential helper.  See the article [Set Up Git](https://help.github.com/articles/set-up-git#platform-all) for additional details on setting up the credential helper.
+
+
 
 ### Creating a GitHub Account
 
@@ -67,7 +69,7 @@ Click Version Control and a new window such as the one below will appear where y
 
 ![VersionControl](./images/VersionControl.png)
 
-In the next window that will appear, shown below you will need to enter the URL for the repository you are cloning.  Enter a project name and specify where you want the project to reside on your computer.  When you are finished, click the Create Project button and you will have cloned a remote repository.
+In the next window that appears, which is shown below, enter the URL for the repository you are cloning.  Enter a project name and specify where you want the project to reside on your computer.  When you are finished, click the `Create Project` button and you will have cloned a remote repository.
 
 ![ProjectVersionControl](./images/ProjectVersionControl.png)
 
@@ -84,17 +86,14 @@ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
+#	modified:   GIT_LAB1.Rmd
 #	modified:   GIT_LAB1.html
 #	modified:   GIT_LAB1.md
 #
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	../../../.DS_Store
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-The `git status` shows us what files are not staged for a commit.  Before files cna be
+The `git status` shows us what files are not staged for a commit.  Before files can be
 committed, they must be added to the staging area.  Files are added to the stating area
 with the command `git add file_name`.  To add all files in the working directory, one
 can use `git add .`  Next all files are added to the staging area and a snapshot is 
@@ -106,8 +105,8 @@ git commit  -m "staging all files"
 ```
 
 ```
-[master f48f765] staging all files
- 2 files changed, 70 insertions(+), 60 deletions(-)
+[master 77cec85] staging all files
+ 3 files changed, 47 insertions(+), 39 deletions(-)
 ```
 
 
@@ -120,13 +119,8 @@ git status
 ```
 # On branch master
 # Your branch is ahead of 'origin/master' by 1 commit.
-#   (use "git push" to publish your local commits)
 #
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	../../../.DS_Store
-nothing added to commit but untracked files present (use "git add" to track)
+nothing to commit (working directory clean)
 ```
 
 Push changes to the remote repository. 
@@ -143,11 +137,7 @@ git status
 
 ```
 # On branch master
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	../../../.DS_Store
-nothing added to commit but untracked files present (use "git add" to track)
+nothing to commit (working directory clean)
 ```
 
 Show the last three commits with
@@ -157,21 +147,21 @@ git log  -3
 ```
 
 ```
-commit f48f765e7a63f7b0305d338f49fbaf017b7c70f9
+commit 77cec8512ada76be54e5f8e17ae4fe006a976de6
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 13:00:44 2014 -0500
+Date:   Tue Jan 14 14:03:34 2014 -0500
 
     staging all files
 
-commit 757bb0448794e42f8b99f024fe20f473f70b39b3
+commit 917c40697e790de3c176070590ebae5bf008249c
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 10:20:21 2014 -0500
+Date:   Tue Jan 14 13:40:36 2014 -0500
 
-    add more directions
+    staging all files
 
-commit 16ac4ac8e65ccae2f73daf5f4878b10facee129c
+commit 5754db276cb523d989df5c50f0596d5ffd9bf47f
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 13 10:18:45 2014 -0500
+Date:   Tue Jan 14 13:38:19 2014 -0500
 
     staging all files
 ```
@@ -185,9 +175,9 @@ git log --pretty=oneline -3
 ```
 
 ```
-f48f765e7a63f7b0305d338f49fbaf017b7c70f9 staging all files
-757bb0448794e42f8b99f024fe20f473f70b39b3 add more directions
-16ac4ac8e65ccae2f73daf5f4878b10facee129c staging all files
+77cec8512ada76be54e5f8e17ae4fe006a976de6 staging all files
+917c40697e790de3c176070590ebae5bf008249c staging all files
+5754db276cb523d989df5c50f0596d5ffd9bf47f staging all files
 ```
 
 
@@ -199,9 +189,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
-f48f765 Mon Jan 13 13:00:44 2014 -0500- staging all files [Alan Arnholt]
-757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
-16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
+77cec85 Tue Jan 14 14:03:34 2014 -0500- staging all files [Alan Arnholt]
+917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
+5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
 ```
 
 
@@ -213,21 +203,21 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
-f48f765 Mon Jan 13 13:00:44 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.html | 69 +++++++++++++++++++----------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 61 +++++++++++++++++--------------
- 2 files changed, 70 insertions(+), 60 deletions(-)
+77cec85 Tue Jan 14 14:03:34 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  6 ++---
+ Alan/summaries/GITstuff/GIT_LAB1.html | 44 +++++++++++++++++++----------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 36 +++++++++++++++-------------
+ 3 files changed, 47 insertions(+), 39 deletions(-)
 
-757bb04 Mon Jan 13 10:20:21 2014 -0500- add more directions [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.html | 48 +++++++++++++++--------------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 42 +++++++++++++-----------------
- 2 files changed, 39 insertions(+), 51 deletions(-)
-
-16ac4ac Mon Jan 13 10:18:45 2014 -0500- staging all files [Alan Arnholt]
+917c406 Tue Jan 14 13:40:36 2014 -0500- staging all files [Alan Arnholt]
  Alan/summaries/GITstuff/GIT_LAB1.Rmd  |  2 +-
- Alan/summaries/GITstuff/GIT_LAB1.html | 53 ++++++++++++++++++++---------------
- Alan/summaries/GITstuff/GIT_LAB1.md   | 47 ++++++++++++++++++-------------
- 3 files changed, 60 insertions(+), 42 deletions(-)
+ Alan/summaries/GITstuff/GIT_LAB1.html | 62 +++++++++++++++++------------------
+ Alan/summaries/GITstuff/GIT_LAB1.md   | 58 ++++++++++++++++----------------
+ 3 files changed, 60 insertions(+), 62 deletions(-)
+
+5754db2 Tue Jan 14 13:38:19 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
 ```
 
 
