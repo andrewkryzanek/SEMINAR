@@ -1,0 +1,16 @@
+{
+    "contents" : "Maureen O'Donnell\n============================================================\n\n\n## Chapter Five\n\n### What's it About?\n\n1. Storing Data\n  * Data must be readable\n  * Cloud storage\n    * Don't have to worry about losing data\n    * Easy access for other collaborators\n\n2. DropBox\n  * One of the cloud storage/version control things covered in this chapter\n  * Limited storage for free\n  * Only saves old versions for 30 days\n  * Very easy to use\n  * Can be accessed anywhere\n  * You can invite collaborators\n\n3. GitHub\n  * The other cloud storage/version control covered in this chapter\n  * A little harder to understand at first\n  * Saves old versions indefinitly\n  * Easy for others to collaborate and edit data\n    * Saves changes that others makes \n  * Easy to leave notes on edits and different versions\n  * Need repositories to create versions\n  * Versions can be copied to different repositories\n  * When edits are made they can be pushed and pulled from the GitHub Site to others computers\n  * GitHub is directly linked with RStudio\n  * There are many commands that can be used to ignore or tag or branch files within your GitHub\n  * RStudio projects link to GitHub version control\n\n\n",
+    "created" : 1390802892871.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "344872883",
+    "id" : "E4E3316A",
+    "lastKnownWriteTime" : 1390802934,
+    "path" : "~/Spring_2014/STT_Senior_Seminar/git_repositories/SEMINAR/Maureen/summaries/Chapter5.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

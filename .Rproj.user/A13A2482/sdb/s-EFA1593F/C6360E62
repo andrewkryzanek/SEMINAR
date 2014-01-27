@@ -1,0 +1,16 @@
+{
+    "contents" : "Maureen O'Donnell\n=====================================================\n\n\n## Chapter Two\n\n### What's It About?\n\n1. Stages of reproducing data\n  * Gathering data\n  * Analyzing data\n  * Presenting data\n  \n2. Theory\n  * Not really covered in the book\n  \n3. Tips\n  * Document EVERYTHING\n    * Even each R session\n  * Save as text files\n    * Allows everyone to read it on any interface\n  * Humans should be able to read it\n    * Obviously...\n  * Tie your files together\n    * Link data and presentations\n  \n",
+    "created" : 1390802827891.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1111771231",
+    "id" : "C6360E62",
+    "lastKnownWriteTime" : 1390802944,
+    "path" : "~/Spring_2014/STT_Senior_Seminar/git_repositories/SEMINAR/Maureen/summaries/Chapter2.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "# Set working directory\nsetwd(\"./Alan/summaries/GITstuff\")\n\n# Load packages\nrequire(knitr)\nrequire(markdown)\n\n# Create .md, .html, and .pdf files\nknit(\"GIT_LAB1.Rmd\")\n# Really do not need this one\nmarkdownToHTML('GIT_LAB1.md', 'GIT_LAB1.html', options=c(\"use_xhml\"))\nsystem(\"pandoc -s GIT_LAB1.html -o GIT_LAB1.pdf -V geometry:margin=1in\")\n",
+    "created" : 1389310170002.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2855764785",
+    "id" : "11DE46BF",
+    "lastKnownWriteTime" : 1389314949,
+    "path" : "~/git_repositories/SEMINAR/Alan/summaries/GITstuff/RmakeFile.R",
+    "project_path" : "Alan/summaries/GITstuff/RmakeFile.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
