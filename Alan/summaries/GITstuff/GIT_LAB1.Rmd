@@ -2,10 +2,12 @@
 ## Git - Notes
 ### Alan T. Arnholt
 
-Last compiled:
+
 ```{r Systime, echo = FALSE, comment = NA, engine = "R"}
-format(Sys.time(), "%A, %B %d, %Y - %X.")
+DT <- format(Sys.time(), "%A, %B %d, %Y - %X.")
 ```
+
+Last compiled `r DT`.
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
 
