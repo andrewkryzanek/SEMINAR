@@ -6,7 +6,7 @@
 
 
 
-Last compiled Monday, January 27, 2014 - 06:48:46..
+Last compiled Sunday, February 02, 2014 - 07:12:59..
 
 Download and install the lastest version of [Git.](http://git-scm.com/downloads)
 
@@ -81,7 +81,17 @@ git status
 
 ```
 # On branch master
-nothing to commit, working directory clean
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   GIT_LAB1.Rmd
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	cache/
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 The `git status` shows us what files are not staged for a commit.  Before files can be
@@ -96,8 +106,15 @@ git commit  -m "staging all files"
 ```
 
 ```
-# On branch master
-nothing to commit, working directory clean
+[master c1bdc45] staging all files
+ 8 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 Alan/summaries/GITstuff/cache/GITsetup_1e85974789856654fd6170253d9fcbe2.RData
+ create mode 100644 Alan/summaries/GITstuff/cache/GITsetup_1e85974789856654fd6170253d9fcbe2.rdb
+ create mode 100644 Alan/summaries/GITstuff/cache/GITsetup_1e85974789856654fd6170253d9fcbe2.rdx
+ create mode 100644 Alan/summaries/GITstuff/cache/STATUS_c084c907b84567e22073c1b7e27f7062.RData
+ create mode 100644 Alan/summaries/GITstuff/cache/STATUS_c084c907b84567e22073c1b7e27f7062.rdb
+ create mode 100644 Alan/summaries/GITstuff/cache/STATUS_c084c907b84567e22073c1b7e27f7062.rdx
+ create mode 100644 Alan/summaries/GITstuff/cache/__packages
 ```
 
 
@@ -109,7 +126,16 @@ git status
 
 ```
 # On branch master
-nothing to commit, working directory clean
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	cache/ADD_37d613968d89bfc0fc573bd5f4d62239.RData
+#	cache/ADD_37d613968d89bfc0fc573bd5f4d62239.rdb
+#	cache/ADD_37d613968d89bfc0fc573bd5f4d62239.rdx
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 Push changes to the remote repository. 
@@ -126,7 +152,19 @@ git status
 
 ```
 # On branch master
-nothing to commit, working directory clean
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	cache/ADD_37d613968d89bfc0fc573bd5f4d62239.RData
+#	cache/ADD_37d613968d89bfc0fc573bd5f4d62239.rdb
+#	cache/ADD_37d613968d89bfc0fc573bd5f4d62239.rdx
+#	cache/PUSH_4a4f909daa6525f7416b0e0df208f325.RData
+#	cache/PUSH_4a4f909daa6525f7416b0e0df208f325.rdb
+#	cache/PUSH_4a4f909daa6525f7416b0e0df208f325.rdx
+#	cache/STATUS2_8ac7feaeff926fc5b62fe3cb6b50f859.RData
+#	cache/STATUS2_8ac7feaeff926fc5b62fe3cb6b50f859.rdb
+#	cache/STATUS2_8ac7feaeff926fc5b62fe3cb6b50f859.rdx
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 Show the last three commits with
@@ -136,23 +174,33 @@ git log  -3
 ```
 
 ```
-commit cc637a3cbe52be7fbdcd51e35d423fa4a7aec8d4
+commit c1bdc45b634ff07e92d1218179d0dc1289ea8487
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 27 06:48:25 2014 -0500
-
-    changed date format
-
-commit c767548f18cddfb58eacd39fc44c8fc7635c7bc2
-Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 27 06:43:32 2014 -0500
+Date:   Sun Feb 2 07:11:33 2014 -0500
 
     staging all files
 
-commit 9508c227d848b504e54d499194d2dff6c07826ae
+commit cb794bc9e9e6d0715f1398513f41ef336dddad88
+Merge: 717333e 6cf3209
 Author: Alan Arnholt <arnholtat@appstate.edu>
-Date:   Mon Jan 27 06:43:12 2014 -0500
+Date:   Sat Feb 1 20:31:10 2014 -0500
 
-    staging all files
+    Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
+    
+    Conflicts:
+    	.Rhistory
+
+commit 717333e6738a34a4090eba26da0d172f3e1c650c
+Merge: bbc9505 3e94168
+Author: Alan Arnholt <arnholtat@appstate.edu>
+Date:   Mon Jan 27 14:55:54 2014 -0500
+
+    help
+    
+    Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
+    
+    Conflicts:
+    	.Rhistory
 ```
 
 
@@ -164,9 +212,9 @@ git log --pretty=oneline -3
 ```
 
 ```
-cc637a3cbe52be7fbdcd51e35d423fa4a7aec8d4 changed date format
-c767548f18cddfb58eacd39fc44c8fc7635c7bc2 staging all files
-9508c227d848b504e54d499194d2dff6c07826ae staging all files
+c1bdc45b634ff07e92d1218179d0dc1289ea8487 staging all files
+cb794bc9e9e6d0715f1398513f41ef336dddad88 Merge branch 'master' of https://github.com/alanarnholt/SEMINAR
+717333e6738a34a4090eba26da0d172f3e1c650c help
 ```
 
 
@@ -178,9 +226,9 @@ git log --pretty=format:"%h %ad- %s [%an]" -3
 ```
 
 ```
-cc637a3 Mon Jan 27 06:48:25 2014 -0500- changed date format [Alan Arnholt]
-c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
-9508c22 Mon Jan 27 06:43:12 2014 -0500- staging all files [Alan Arnholt]
+c1bdc45 Sun Feb 2 07:11:33 2014 -0500- staging all files [Alan Arnholt]
+cb794bc Sat Feb 1 20:31:10 2014 -0500- Merge branch 'master' of https://github.com/alanarnholt/SEMINAR [Alan Arnholt]
+717333e Mon Jan 27 14:55:54 2014 -0500- help [Alan Arnholt]
 ```
 
 
@@ -192,21 +240,19 @@ git log --pretty=format:"%h %ad- %s [%an]" -3 --stat
 ```
 
 ```
-cc637a3 Mon Jan 27 06:48:25 2014 -0500- changed date format [Alan Arnholt]
- .Rproj.user/D1DD7234/sdb/s-76E32973/35FF3F65 |   6 +-
- .Rproj.user/D1DD7234/sdb/s-76E32973/76BD1E65 |  16 ----
- Alan/summaries/GITstuff/GIT_LAB1.html        | 110 +++++++++++++++++----------
- Alan/summaries/GITstuff/GIT_LAB1.md          |  38 ++++-----
- 4 files changed, 93 insertions(+), 77 deletions(-)
+c1bdc45 Sun Feb 2 07:11:33 2014 -0500- staging all files [Alan Arnholt]
+ Alan/summaries/GITstuff/GIT_LAB1.Rmd                      |   2 +-
+ .../cache/GITsetup_1e85974789856654fd6170253d9fcbe2.RData | Bin 0 -> 199 bytes
+ .../cache/GITsetup_1e85974789856654fd6170253d9fcbe2.rdb   |   0
+ .../cache/GITsetup_1e85974789856654fd6170253d9fcbe2.rdx   | Bin 0 -> 113 bytes
+ .../cache/STATUS_c084c907b84567e22073c1b7e27f7062.RData   | Bin 0 -> 341 bytes
+ .../cache/STATUS_c084c907b84567e22073c1b7e27f7062.rdb     |   0
+ .../cache/STATUS_c084c907b84567e22073c1b7e27f7062.rdx     | Bin 0 -> 113 bytes
+ Alan/summaries/GITstuff/cache/__packages                  |   2 ++
+ 8 files changed, 3 insertions(+), 1 deletion(-)
 
-c767548 Mon Jan 27 06:43:32 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.md | 232 ++++++++++++++++++++++++++++++++++++
- 1 file changed, 232 insertions(+)
-
-9508c22 Mon Jan 27 06:43:12 2014 -0500- staging all files [Alan Arnholt]
- Alan/summaries/GITstuff/GIT_LAB1.Rmd |   6 +-
- Alan/summaries/GITstuff/GIT_LAB1.md  | 202 -----------------------------------
- 2 files changed, 4 insertions(+), 204 deletions(-)
+cb794bc Sat Feb 1 20:31:10 2014 -0500- Merge branch 'master' of https://github.com/alanarnholt/SEMINAR [Alan Arnholt]
+717333e Mon Jan 27 14:55:54 2014 -0500- help [Alan Arnholt]
 ```
 
 
