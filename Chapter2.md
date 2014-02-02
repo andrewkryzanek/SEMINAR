@@ -12,7 +12,8 @@ Kayla Janos
   * Results presentation
 * Always think about how different stages tie together, that will result in more reproducible research
 
-**2.2: Practical tips for reproducible research**
+**2.2: Practical tips for reproducible research**getwd()
+
 * Document everything
   * Documenting everything is key in producing reproducible research
   * Record session information in R 

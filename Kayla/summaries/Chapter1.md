@@ -99,7 +99,13 @@ There is two broad sets of tools
   * R: http://www.r-project.org/
   * RStudio: http://www.rstudio.com/ide/download/
   * For LaTeX you must install a TeX distribution:  
-     -http://www.latex-project.org/ftp.html
+     http://www.latex-project.org/ftp.html
+     
+**1.6: Book Overview**
+* The books purpose is to give us the tools we need to produce reproducible research
+* It is not a complete reference for the programs taught 
+
+
 
 
 
