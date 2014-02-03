@@ -1,0 +1,28 @@
+# Doing it with Windows
+
+OK....does **bash** work with windows?
+
+First see if the following works in **R**.
+
+```{r comment = NA}
+Sys.which('bash')
+```
+
+```{r engine = 'bash', comment = NA}
+pwd
+```
+
+To see if **sh** will work, test to see if it is found on your system.  
+I have **Rtools** installed on my system.  You may want to install [Rtools](http://cran.r-project.org/bin/windows/Rtools/) if you have not already.
+
+```{r comment = NA}
+Sys.which('sh')
+```
+
+```{r engine = 'sh', comment = NA}
+ls -a
+```
+
+```{r engine = 'sh', comment = NA}
+ls -al
+```
