@@ -53,3 +53,11 @@ What time is it?
 ```{r engine = 'bash', comment = NA}
 date
 ```
+
+```{r FOLDED, fig.width=4, fig.height =4,fig.align='center'}
+#### Folded chunk ####
+junk <- rnorm(1000, 100, 10)
+hist(junk, col = "red")
+library(ggplot2)
+ggplot(data.frame(x = junk), aes(x = x)) + geom_histogram()
+```
