@@ -1,5 +1,7 @@
 # Doing it with Windows
 
+## Having fun --- or Not
+
 OK....does **bash** work with windows?
 
 First, check if the following works at the **R** prompt.
@@ -29,8 +31,25 @@ Hot dog!  This is working.  Issue some commands to see what is in the working di
 ls -a
 ```
 
-Maybe a little more information.
+Maybe a little more information. Note: `-al` lists details for hidden and 
+unhiddn files and folders.
 
 ```{r engine = 'sh', comment = NA}
 ls -al
+```
+`touch` creates an empty file
+
+```{r engine = 'sh', comment = NA}
+touch NewFile
+ls
+```
+```{r engine = 'sh', comment = NA}
+rm NewFile
+ls
+```
+
+What time is it?
+
+```{r engine = 'bash', comment = NA}
+date
 ```

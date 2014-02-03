@@ -3,6 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
 
 <title>Doing it with Windows</title>
 
@@ -180,6 +181,8 @@ hljs.initHighlightingOnLoad();
 <body>
 <h1>Doing it with Windows</h1>
 
+<h2>Having fun &mdash; or Not</h2>
+
 <p>OK&hellip;.does <strong>bash</strong> work with windows?</p>
 
 <p>First, check if the following works at the <strong>R</strong> prompt.</p>
@@ -223,17 +226,47 @@ WindowsCheck.html
 WindowsCheck.md
 </code></pre>
 
-<p>Maybe a little more information.</p>
+<p>Maybe a little more information. Note: <code>-al</code> lists details for hidden and 
+unhiddn files and folders.</p>
 
 <pre><code class="sh">ls -al
 </code></pre>
 
 <pre><code>total 32
-drwx------+ 1 Alan mkpasswd     0 Feb  3 13:16 .
+drwx------+ 1 Alan mkpasswd     0 Feb  3 13:49 .
 drwx------+ 1 Alan mkpasswd     0 Feb  3 13:14 ..
--rwx------  1 Alan mkpasswd   820 Feb  3 13:22 WindowsCheck.Rmd
--rwx------  1 Alan mkpasswd 14138 Feb  3 13:16 WindowsCheck.html
--rwx------  1 Alan mkpasswd   924 Feb  3 13:16 WindowsCheck.md
+-rwx------  1 Alan mkpasswd  1139 Feb  3 13:50 WindowsCheck.Rmd
+-rwx------  1 Alan mkpasswd 15174 Feb  3 13:49 WindowsCheck.html
+-rwx------  1 Alan mkpasswd  1754 Feb  3 13:49 WindowsCheck.md
+</code></pre>
+
+<p><code>touch</code> creates an empty file</p>
+
+<pre><code class="sh">touch NewFile
+ls
+</code></pre>
+
+<pre><code>NewFile
+WindowsCheck.Rmd
+WindowsCheck.html
+WindowsCheck.md
+</code></pre>
+
+<pre><code class="sh">rm NewFile
+ls
+</code></pre>
+
+<pre><code>WindowsCheck.Rmd
+WindowsCheck.html
+WindowsCheck.md
+</code></pre>
+
+<p>What time is it?</p>
+
+<pre><code class="bash">date
+</code></pre>
+
+<pre><code>Mon Feb  3 13:50:02 EST 2014
 </code></pre>
 
 </body>
