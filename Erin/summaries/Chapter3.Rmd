@@ -1,0 +1,39 @@
+Chapter 3 Summary- Getting Started With R, RStudio, and knitr
+Erin Kreiling
+========================================================
+
+3.1 Using R: the Basics
+- Key parts of R: objects & assignment, component selection, functions and commands, arguments, the workspace & history, and packages. 
+- Objects are like the R language's nouns. 
+- R is object-oriented. 
+- <- is an assignment operator
+- ## is followed by output
+- Character strings must be enclosed by '' or "".
+- It is very important to to keep in mind the type of object you are using to avoid warning messages. 
+- class will tell you the type of an object.
+- Vectors are a group of numbers, character strings, etc. 
+- c = concatenate 
+- data.frame can combine characters and numbers into rows and columns.
+- R recognizes whichever label has been assigned most recently.
+- A dollar sign is called a component selector.
+- The attach command attaches a database to R's search path. 
+- head shows first few values of a variable. 
+- Subscripts (like []) allow you to view and analyze specific parts of a data set.
+- Arguments modify what commands do.
+
+3.2 Using RStudio
+- RStudio is very similar to R but with more features.
+
+3.3 Using knitr: the Basics
+- knitr ties together your presentation of results with the creation of those results.
+- The knitr process:
+ - Create a knittable markup document.
+ - knitr knits.
+ - knitr inserts marked-up results into a document that only contains markup for the presentation document.
+ - Compile the document.
+- R code should be put into code chunks in order to be presented. 
+- R Markdown code chunks begin with ```{r}
+- Sweave-style code chunks begin with << >>=
+- Rtex-style code chunks begin with %%
+- Global: applies to the entire document.
+- knitr is a regular R package so you can knit documents in R.
