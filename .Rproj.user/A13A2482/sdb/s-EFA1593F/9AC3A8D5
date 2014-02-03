@@ -1,0 +1,16 @@
+{
+    "contents" : "Maureen\n========================================================\n\n## Chapter One\n\n#### What's it about?\n\n1. Reproducible Research\n  * Data and results can be recreated\n  * Helps find errors\n  * Should be easy to reproduce, if difficult it pretty much defeats the purpose of reproducible research.\n  * Keep track of data and all results.  \n  * It is important to document EVERYTHING you do\n    * This helps find errors and allows you to go back and make changes\n  * If we create reproducible data it allows others to critique and help\n  * verified by reproduction\n  * saves time for others\n  * By documenting everything you have a more orginized research project.\n  * Easier for people to collaborate\n  * Easier to make changes\n  * People will take your research more seriously\n\n2. Who is This Book for?\n  * Me\n  * You\n  * Private Researchers\n    * Allows others to collaborate on major projects\n  * Professors\n    * Creating lecutres that are reproducible helps students and teachers\n  \n3. Tools\n  * R\n    * Programming language\n  * knitr\n    * R package for combining research and presentation\n  * Markup Languages\n    * Formating\n  * RStudio\n    * Integrated Developer Environment\n  * Cloud Storage & Versioning\n    * Make information more availible\n\n4. Another Why?\n  * Why R?\n    * Cause it's awesome and opensource and constantly being updated\n  * Why Knitr?\n    * Works with R \n  * Why RStudio?\n    * Very easy interface\n\n5. Installation\n  * Lots of steps\n\n6. Book\n  * Covers tools and steps for creating reproducible research and combining it with appropriate presentation\n  * Read in order\n  * Can be reproduced\n",
+    "created" : 1390802466760.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1642074171",
+    "id" : "9AC3A8D5",
+    "lastKnownWriteTime" : 1390802994,
+    "path" : "~/Spring_2014/STT_Senior_Seminar/git_repositories/SEMINAR/Maureen/summaries/Chapter1.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

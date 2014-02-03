@@ -1,0 +1,16 @@
+Chapter 2 Summary- Getting Started with Reproducible Research
+========================================================
+
+2.1 The Big Picture: A Workflow for Reproducible Research
+- 3 basic stages of a research project: data gathering, data analysis, results presentation
+- Theory building can be "the easiest part to make reproducible".
+- Practical tips for reproducible research: document everything, everything is a (text) file, all files should be human readable, explicitly tie your files together, and have a plan to organize, store, and make your files available.
+- Use comments everywhere to help other humans.
+- Use the simplest file format possible to store information.(text file)
+- Treat all of your research files as if someone who has not worked on the project will be the one looking at them later.
+- Format your code using a style guide.
+- Headers should include a description of what the file does, the date of its last update, and the name of the file's creator(s).
+- An appendix following your code can be useful for a new user of your file.
+- Use Tie Commands to link your files together.
+- Make files organized from the beginning of your research process. 
+- Limit the amount of content any one file has.
