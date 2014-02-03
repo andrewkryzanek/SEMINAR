@@ -1,0 +1,24 @@
+Chapter 4- Getting Started with File Management
+Erin Kreiling
+========================================================
+
+- File management is important because it makes replication easier and you can make changes more easily, benefit from work you have already done, and collaborate. 
+
+4.1 File Paths & Naming Conventions
+- Files are organized in file trees.
+- Spaces in file and directory names are not good because they can create problems for the computer reading the file path.
+- You should always know your working directory.
+
+4.3 Setting Directories as RStudio Projects
+- RStudio projects are good because: they can be opened easily, everythings loads automatically and you get the correct working directory, you can be more specific with options, everything saves correctly, version control is helpful, and you can build your project.
+
+4.4 R File Manipulation Commands
+- Your working directory is very important so use getwd() and setwd.
+- There are many commands that can either be typed at the prompt or just found through using the dropdown menus.
+
+
+4.5 Unix-like Shell Commands for File Management
+- Unix-like shell programs include Bash for Mac and Linux and PowerShell for Windows.
+- These allow you to interact with your computer's operating system. 
+- There are entirely different commands in the shell, like pwd or ls.
+
