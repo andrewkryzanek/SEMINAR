@@ -2,11 +2,15 @@
 
 OK....does **bash** work with windows?
 
-First see if the following works in **R**.
+First, check if the following works at the **R** prompt.
 
 ```{r comment = NA}
 Sys.which('bash')
 ```
+
+Cool!  It looks like I am good to go.
+
+Now we will print the working directory from **bash**.
 
 ```{r engine = 'bash', comment = NA}
 pwd
@@ -19,9 +23,13 @@ I have **Rtools** installed on my system.  You may want to install [Rtools](http
 Sys.which('sh')
 ```
 
+Hot dog!  This is working.  Issue some commands to see what is in the working directory.
+
 ```{r engine = 'sh', comment = NA}
 ls -a
 ```
+
+Maybe a little more information.
 
 ```{r engine = 'sh', comment = NA}
 ls -al
