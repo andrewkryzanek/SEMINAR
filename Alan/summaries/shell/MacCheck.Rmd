@@ -1,8 +1,8 @@
-# Doing it with Windows
+# Doing it with OSX
 
 ## Having fun --- or Not
 
-OK....does **bash** work with windows?
+OK....does **bash** work with OSX?
 
 First, check if the following works at the **R** prompt.
 
@@ -19,7 +19,7 @@ pwd
 ```
 
 To see if **sh** will work, test to see if it is found on your system.  
-I have **Rtools** installed on my system.  You may want to install [Rtools](http://cran.r-project.org/bin/windows/Rtools/) if you have not already.
+I have **xcode** installed on my system.  You may want to install [xcode](https://developer.apple.com/xcode/) if you have not already.
 
 ```{r comment = NA}
 Sys.which('sh')
@@ -52,4 +52,12 @@ What time is it?
 
 ```{r engine = 'bash', comment = NA}
 date
+```
+
+```{r FOLDED, fig.width=4, fig.height =4,fig.align='center'}
+#### Folded chunk ####
+junk <- rnorm(1000, 100, 10)
+hist(junk, col = "red")
+library(ggplot2)
+ggplot(data.frame(x = junk), aes(x = x)) + geom_histogram()
 ```

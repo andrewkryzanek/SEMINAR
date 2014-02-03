@@ -1,5 +1,7 @@
 # Doing it with Windows
 
+## Having fun --- or Not
+
 OK....does **bash** work with windows?
 
 First, check if the following works at the **R** prompt.
@@ -59,7 +61,8 @@ WindowsCheck.md
 ```
 
 
-Maybe a little more information.
+Maybe a little more information. Note: `-al` lists details for hidden and 
+unhiddn files and folders.
 
 
 ```sh
@@ -68,10 +71,49 @@ ls -al
 
 ```
 total 32
-drwx------+ 1 Alan mkpasswd     0 Feb  3 13:16 .
+drwx------+ 1 Alan mkpasswd     0 Feb  3 14:03 .
 drwx------+ 1 Alan mkpasswd     0 Feb  3 13:14 ..
--rwx------  1 Alan mkpasswd   820 Feb  3 13:22 WindowsCheck.Rmd
--rwx------  1 Alan mkpasswd 14138 Feb  3 13:16 WindowsCheck.html
--rwx------  1 Alan mkpasswd   924 Feb  3 13:16 WindowsCheck.md
+-rwx------  1 Alan mkpasswd  1139 Feb  3 13:50 WindowsCheck.Rmd
+-rwx------  1 Alan mkpasswd 15189 Feb  3 14:03 WindowsCheck.html
+-rwx------  1 Alan mkpasswd  1765 Feb  3 14:03 WindowsCheck.md
+```
+
+`touch` creates an empty file
+
+
+```sh
+touch NewFile
+ls
+```
+
+```
+NewFile
+WindowsCheck.Rmd
+WindowsCheck.html
+WindowsCheck.md
+```
+
+
+```sh
+rm NewFile
+ls
+```
+
+```
+WindowsCheck.Rmd
+WindowsCheck.html
+WindowsCheck.md
+```
+
+
+What time is it?
+
+
+```bash
+date
+```
+
+```
+Mon Feb  3 14:04:58 EST 2014
 ```
 
