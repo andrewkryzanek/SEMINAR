@@ -71,11 +71,11 @@ ls -al
 
 ```
 total 32
-drwx------+ 1 Alan mkpasswd     0 Feb  3 13:50 .
+drwx------+ 1 Alan mkpasswd     0 Feb  3 13:56 .
 drwx------+ 1 Alan mkpasswd     0 Feb  3 13:14 ..
 -rwx------  1 Alan mkpasswd  1139 Feb  3 13:50 WindowsCheck.Rmd
--rwx------  1 Alan mkpasswd 15189 Feb  3 13:50 WindowsCheck.html
--rwx------  1 Alan mkpasswd  1765 Feb  3 13:50 WindowsCheck.md
+-rwx------  1 Alan mkpasswd 15189 Feb  3 13:56 WindowsCheck.html
+-rwx------  1 Alan mkpasswd  1765 Feb  3 13:56 WindowsCheck.md
 ```
 
 `touch` creates an empty file
@@ -114,6 +114,6 @@ date
 ```
 
 ```
-Mon Feb  3 13:56:52 EST 2014
+Mon Feb  3 14:03:03 EST 2014
 ```
 
