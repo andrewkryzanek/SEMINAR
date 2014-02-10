@@ -17,4 +17,4 @@ RStudio is an integrated development environment for R. It provides a centralize
 
 `knitr`
 ==
-
+The package `knitr` is an R package with commands for tying analysis code into presentation documents including those written in Latex and Markdown. The `knitr` process takes three steps. It begins with a *knittable* document that we create containing analysis source codes and rules for how to format the text (the markup). Then `knitr` will *knit* the source document into a *markup only document*. Finally, it then compiles the markup document into a presentation document such as pdf or html.
